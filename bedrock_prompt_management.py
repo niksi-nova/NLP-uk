@@ -65,7 +65,7 @@ def _default_prompt_registry() -> Dict[str, Any]:
         "templates": {
             "medical_summarization": {
                 "description": "Core medical summarization system prompt for Track B.",
-                "active_version": "v1",
+                "active_version": "v3",
                 "bedrock_prompt_id": None,
                 "bedrock_prompt_arn": None,
                 "versions": {
@@ -83,6 +83,11 @@ def _default_prompt_registry() -> Dict[str, Any]:
                             "</clinical_document>\n\n"
                             "Generate a structured JSON summary using exactly this schema:\n"
                             "{output_schema}\n"
+                            "All dates in the summary field must use UK format DD/MM/YYYY "
+                            "(e.g. 30/03/2026). Never write dates in Month-name or US format.\n"
+                            "Medication names and doses must be written in full: drug name, "
+                            "numeric dose with a space before the unit, and frequency as words "
+                            "(e.g. 'Solifenacin 3 mg once daily', not '3mg OD').\n"
                         ),
                     },
                     "v2": {
@@ -100,13 +105,72 @@ def _default_prompt_registry() -> Dict[str, Any]:
                             "</clinical_document>\n\n"
                             "Produce strict JSON matching this schema (no markdown):\n"
                             "{output_schema}\n"
+                            "All dates in the summary field must use UK format DD/MM/YYYY "
+                            "(e.g. 30/03/2026). Never write dates in Month-name or US format.\n"
+                            "Medication names and doses must be written in full: drug name, "
+                            "numeric dose with a space before the unit, and frequency as words "
+                            "(e.g. 'Solifenacin 3 mg once daily', not '3mg OD').\n"
+                        ),
+                    },
+                    "v3": {
+                        "created_at": "2026-05-06T00:00:00Z",
+                        "created_by": "FINE_TUNE_ROUND_1",
+                        "rationale": (
+                            "Enforces GP-letter handover style for any NHS clinical document. "
+                            "Constrains summary to 2-4 sentences opening with encounter type "
+                            "and date. Preserves numeric precision. Enforces UK date format. "
+                            "Ensures medication strings are written in full."
+                        ),
+                        "template": (
+                            "You are a senior clinical summarization assistant producing a "
+                            "{role_label} output for a UK NHS GP practice.\n\n"
+                            "{role_guidance}\n\n"
+                            "<document_type>{document_type}</document_type>\n"
+                            "{context_section}\n"
+                            "<clinical_document>\n"
+                            "{clinical_document}\n"
+                            "</clinical_document>\n\n"
+                            "Rules for the summary field — follow these exactly for any "
+                            "document type:\n\n"
+                            "LENGTH AND STRUCTURE:\n"
+                            "- Write exactly 2 to 4 sentences. Maximum 90 words total.\n"
+                            "- Do not use bullet points or lists inside the summary field. "
+                            "Write in continuous prose.\n\n"
+                            "OPENING SENTENCE:\n"
+                            "- The first sentence must identify the encounter type and the "
+                            "encounter date in UK format DD/MM/YYYY. Derive both from the "
+                            "document itself.\n"
+                            "- Use the clinical event name as it appears in the document "
+                            "(e.g. the department name, clinic name, or encounter description "
+                            "followed by the date). Do not invent a label not present in "
+                            "the source.\n\n"
+                            "CONTENT TO INCLUDE:\n"
+                            "- Key clinical findings from this encounter.\n"
+                            "- Relevant negative findings that change the clinical picture "
+                            "(e.g. no focal neurology, no infusion reactions).\n"
+                            "- Investigations performed and their results if stated.\n"
+                            "- The discharge plan, referral, or next step.\n\n"
+                            "CONTENT TO EXCLUDE:\n"
+                            "- Patient demographics (name, address, DOB, NHS number).\n"
+                            "- GP or hospital contact details, salutations, signatures.\n"
+                            "- Information not present in the source document.\n\n"
+                            "PRECISION:\n"
+                            "- Preserve all numeric values exactly as written in the source "
+                            "(measurements, doses, ranges, scores, percentages).\n"
+                            "- All dates must be in UK format DD/MM/YYYY.\n"
+                            "- Medication names and doses must be written in full: drug name, "
+                            "numeric dose with a space before the unit, frequency as full "
+                            "words (e.g. 'Solifenacin 3 mg once daily').\n\n"
+                            "Produce strict JSON matching this schema (no markdown, "
+                            "no preamble, no trailing text):\n"
+                            "{output_schema}\n"
                         ),
                     },
                 },
             },
             "role_based_actions": {
                 "description": "Prompt segment for role-specific follow-up action generation.",
-                "active_version": "v1",
+                "active_version": "v3",
                 "bedrock_prompt_id": None,
                 "bedrock_prompt_arn": None,
                 "versions": {
@@ -130,6 +194,60 @@ def _default_prompt_registry() -> Dict[str, Any]:
                             "- Prioritize urgent/safety-critical actions first.\n"
                             "- Keep each follow_up_actions item measurable and reviewable.\n"
                             "- If evidence is missing, return an empty action item list.\n"
+                        ),
+                    },
+                    "v3": {
+                        "created_at": "2026-05-06T00:00:00Z",
+                        "created_by": "FINE_TUNE_ROUND_1",
+                        "rationale": (
+                            "Enforces verb-first actionable structure for any clinical "
+                            "document type. Preserves timing information from source. "
+                            "Differentiates medication changes as separate items. "
+                            "Works for any NHS letter — does not rely on document-specific "
+                            "knowledge."
+                        ),
+                        "template": (
+                            "Role-action policy for {role_label}:\n\n"
+                            "Generate follow_up_actions from the source document. Each "
+                            "action item must follow ALL of these rules:\n\n"
+                            "VERB RULE:\n"
+                            "Every action must begin with an imperative verb. Choose the "
+                            "most accurate verb from this list based on what the source "
+                            "says: Refer, Arrange, Prescribe, Stop, Continue, Review, "
+                            "Follow up, Discuss, Monitor, Advise, Repeat, Request, "
+                            "Check, Notify, Counsel, Ensure.\n\n"
+                            "CONTENT RULE:\n"
+                            "Each action must answer what needs to happen, and where or "
+                            "to whom if stated in the source. Write as a single complete "
+                            "sentence. Do not use vague nouns like 'referral' or "
+                            "'review' as the entire action — always state what the "
+                            "referral or review is for.\n\n"
+                            "TIMING RULE:\n"
+                            "If the source states any time interval or deadline for an "
+                            "action (e.g. 'in 6 months', 'in 4 weeks', 'before next "
+                            "appointment', 'annually'), include that interval verbatim "
+                            "in the action_text. The structured due_date field for that "
+                            "action must be computed by adding that interval to the "
+                            "letter date. If no timing is stated, leave due_date as "
+                            "the default.\n\n"
+                            "MEDICATION CHANGE RULE:\n"
+                            "If the source contains any medication start, stop, dose "
+                            "change, or switch, emit it as a SEPARATE action item. "
+                            "Prefix the action_text with exactly 'Medication change: ' "
+                            "followed by the instruction as written in the source "
+                            "(drug name, dose with space before unit, frequency in full "
+                            "words, route if stated).\n\n"
+                            "SAFETY ADVICE RULE:\n"
+                            "If the source contains driving restrictions, alcohol advice, "
+                            "smoking advice, or falls precautions directed at the GP or "
+                            "patient, emit each as a separate action item prefixed with "
+                            "'Advise: '.\n\n"
+                            "EVIDENCE RULE:\n"
+                            "Only include actions explicitly supported by the source "
+                            "document. If no follow-up actions are stated or implied, "
+                            "return an empty array. Do not invent actions.\n\n"
+                            "LIMIT: Maximum 8 action items. Order by clinical urgency, "
+                            "most urgent first.\n"
                         ),
                     },
                 },
@@ -166,22 +284,90 @@ def _default_prompt_registry() -> Dict[str, Any]:
                     },
                 },
             },
+            "summary_self_critique": {
+                "description": (
+                    "One-pass self-critique for Track B medium-confidence outputs. "
+                    "Triggered only when unified confidence is in the medium band "
+                    "(0.60 <= score < threshold). "
+                    "This template adds one Bedrock API call per document-role pair "
+                    "when triggered. Monitor usage in the CloudWatch cost dashboard."
+                ),
+                "active_version": "v1",
+                "bedrock_prompt_id": None,
+                "bedrock_prompt_arn": None,
+                "versions": {
+                    "v1": {
+                        "created_at": "2026-05-06T00:00:00Z",
+                        "created_by": "FINE_TUNE_ROUND_1",
+                        "rationale": (
+                            "Single self-critique pass to recover medium-confidence "
+                            "outputs before routing to human review. General-purpose: "
+                            "works for any NHS clinical document type. Expected to "
+                            "resolve 30-50 percent of medium-band cases automatically."
+                        ),
+                        "template": (
+                            "You previously produced this clinical summary for a "
+                            "{role_label} audience:\n\n"
+                            "<previous_summary>\n"
+                            "{previous_summary}\n"
+                            "</previous_summary>\n\n"
+                            "The source document is:\n"
+                            "<clinical_document>\n"
+                            "{clinical_document}\n"
+                            "</clinical_document>\n\n"
+                            "Perform a strict self-critique. Check for ALL of the "
+                            "following error types. Fix every error you find:\n\n"
+                            "1. UNSUPPORTED CONTENT: Any sentence or claim in the "
+                            "summary that is not directly supported by the source "
+                            "document. Remove it.\n\n"
+                            "2. NUMERIC ERRORS: Any numeric value, measurement, dose, "
+                            "date, or range that differs from or is absent from the "
+                            "source. Correct it to match the source exactly.\n\n"
+                            "3. LATERALITY ERRORS: Any side (left/right/bilateral) "
+                            "or anatomical sub-site stated in the source but missing "
+                            "or wrong in the summary. Add or correct it.\n\n"
+                            "4. MISSING ACTIONS: Any follow-up action, referral, "
+                            "investigation, or medication change the source explicitly "
+                            "states that is absent from follow_up_actions. Add it.\n\n"
+                            "5. MEDICATION FORMAT ERRORS: Any medication name or dose "
+                            "not written as: drug name, numeric dose, space, unit, "
+                            "frequency in full words. Correct the format.\n\n"
+                            "6. DATE FORMAT ERRORS: Any date not in UK format "
+                            "DD/MM/YYYY. Correct it.\n\n"
+                            "7. OPENING SENTENCE: If the first sentence of summary "
+                            "does not state the encounter type and encounter date, "
+                            "rewrite it so it does.\n\n"
+                            "If you find no errors, return the previous summary "
+                            "unchanged.\n\n"
+                            "Return valid JSON conforming to exactly the same schema "
+                            "as the previous summary. No markdown, no preamble, "
+                            "no explanation — only the JSON output.\n"
+                        ),
+                    },
+                },
+            },
         },
+
         "ab_tests": {
             "medical_summarization": {
                 "enabled": False,
-                "weights": {"v1": 0.5, "v2": 0.5},
+                "weights": {"v1": 0.0, "v2": 0.0, "v3": 1.0},
                 "salt": "trackb-medical-summary-exp",
             },
             "role_based_actions": {
                 "enabled": False,
-                "weights": {"v1": 0.5, "v2": 0.5},
+                "weights": {"v1": 0.0, "v2": 0.0, "v3": 1.0},
                 "salt": "trackb-role-actions-exp",
             },
             "error_correction": {
                 "enabled": False,
                 "weights": {"v1": 0.5, "v2": 0.5},
                 "salt": "trackb-error-correction-exp",
+            },
+            "summary_self_critique": {
+                "enabled": False,
+                "weights": {"v1": 1.0},
+                "salt": "trackb-self-critique-exp",
             },
         },
         "last_updated": _utc_now(),
@@ -464,7 +650,7 @@ class BedrockPromptManager:
             "role_guidance": role_guidance,
             "document_type": document_type,
             "context_section": context_section,
-            "clinical_document": clinical_document[:6000],
+            "clinical_document": clinical_document[:12000],
             "output_schema": json.dumps(output_schema, indent=2),
         }
 
@@ -495,6 +681,7 @@ class BedrockPromptManager:
                 name: details["selection_mode"] for name, details in component_tracking.items()
             },
             "final_prompt_hash": _stable_hash(final_prompt),
+            "truncated": len(clinical_document) > 12000,
         }
         return final_prompt, tracking_summary
 

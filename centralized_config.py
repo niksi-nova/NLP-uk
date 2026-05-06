@@ -174,3 +174,66 @@ def redact_effective_config(config: RuntimeConfig) -> Dict[str, Any]:
         return node
 
     return _redact(payload)
+
+
+# ---------------------------------------------------------------------------
+# Role-specific guidance constants for Track B summarization.
+# Pass the appropriate constant into the role_guidance argument of
+# compose_track_b_prompt() based on which role is being generated.
+# These are general-purpose instructions that work for any clinical document.
+# Do not change wording without clinical review.
+# ---------------------------------------------------------------------------
+
+ROLE_GUIDANCE_CLINICIAN = (
+    "Audience: GP. "
+    "Use standard UK clinical abbreviations freely where they appear in "
+    "the source (e.g. TTE, OD, BD, PRN, FBC, U&E, CRP, DVLA, DNAR, "
+    "SpO2, BP, HR, RR). "
+    "Preserve all numeric findings, measurements, and doses exactly as "
+    "written in the source document — do not round, estimate, or omit them. "
+    "Do not soften, interpret, or expand clinical terminology. "
+    "If the source contains driving restrictions, alcohol advice, or "
+    "safeguarding concerns directed at the GP, include each as a separate "
+    "item in follow_up_actions."
+)
+
+ROLE_GUIDANCE_PATIENT = (
+    "Audience: the patient themselves. Write at a Year-7 reading level "
+    "(suitable for an 11-12 year old). "
+    "Replace all clinical abbreviations and medical jargon with plain "
+    "everyday English — never use abbreviations like FBC, TTE, OD, U&E. "
+    "When a finding or test result might be unfamiliar, add a brief "
+    "plain-English explanation in parentheses immediately after it. "
+    "Never quote medication doses without their unit. "
+    "Never add reassurance, predictions, or advice not present in the "
+    "source document. "
+    "If the source expresses uncertainty, reflect that uncertainty "
+    "plainly (e.g. 'the doctors are still investigating'). "
+    "Do not use the words negative, positive, or unremarkable without "
+    "explaining what they mean in this specific context."
+)
+
+ROLE_GUIDANCE_PHARMACIST = (
+    "Audience: community pharmacist. "
+    "Focus exclusively on medication-relevant information: drug name, "
+    "dose, unit, frequency, route, duration, and any change versus the "
+    "previous regimen. "
+    "Format new prescriptions as: START: <drug> <dose> <unit> "
+    "<frequency> <route>. "
+    "Format stopped medications as: STOP: <drug> — reason: <reason if "
+    "stated in source, otherwise omit reason field>. "
+    "Format dose changes as: CHANGE: <drug> from <old dose> to "
+    "<new dose>. "
+    "Omit all non-medication clinical findings unless they directly "
+    "affect dispensing safety (e.g. a documented allergy, renal "
+    "impairment that changes dosing, or a drug interaction explicitly "
+    "mentioned in the source). "
+    "Do not infer interactions or contraindications not stated in "
+    "the source."
+)
+
+ROLE_GUIDANCE = {
+    "clinician": ROLE_GUIDANCE_CLINICIAN,
+    "patient": ROLE_GUIDANCE_PATIENT,
+    "pharmacist": ROLE_GUIDANCE_PHARMACIST,
+}

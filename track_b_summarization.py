@@ -28,6 +28,7 @@ from dataclasses import dataclass
 from enum import Enum
 import numpy as np
 from bedrock_prompt_management import BedrockPromptManager
+from centralized_config import ROLE_GUIDANCE as _CENTRALIZED_ROLE_GUIDANCE
 from hipaa_compliance import (
     build_phi_detection_summary,
     create_secure_client,
@@ -561,7 +562,7 @@ Be thorough with medication details. Flag any potential issues."""
         Returns:
             dict: Structured summary output
         """
-        role_guidance = self.ROLE_GUIDANCE[role]
+        role_guidance = _CENTRALIZED_ROLE_GUIDANCE.get(role.value, self.ROLE_GUIDANCE[role])
         prompt, prompt_tracking = self.prompt_manager.compose_track_b_prompt(
             document_id=document_id,
             role_key=role.value,
@@ -765,6 +766,55 @@ class TrackBPipeline:
                 validation_report = role_validator.get_last_report()
                 corrected_summary = validation_report.get("corrected_output", summary_data)
                 corrected_summary["prompt_tracking"] = prompt_tracking
+
+                # ----------------------------------------------------------------
+                # Change 5: Self-critique pass for medium-confidence outputs.
+                # Triggered when confidence_score is in [MEDIUM_THRESHOLD, HIGH_THRESHOLD).
+                # Adds one Bedrock call; monitor cost in CloudWatch.
+                # ----------------------------------------------------------------
+                _MEDIUM_THRESHOLD = 0.60
+                try:
+                    from lambda_confidence_aggregator import DEFAULT_THRESHOLD as _HIGH_THRESHOLD
+                except Exception:
+                    _HIGH_THRESHOLD = 0.80
+
+                _raw_confidence = float(corrected_summary.get("confidence_score", 0.0))
+                if _MEDIUM_THRESHOLD <= _raw_confidence < _HIGH_THRESHOLD:
+                    try:
+                        print(f"    [self-critique] confidence={_raw_confidence:.3f} is medium-band — running self-critique pass.")
+                        _critique_vars = {
+                            "role_label": role.value,
+                            "previous_summary": json.dumps(corrected_summary, ensure_ascii=False),
+                            "clinical_document": document_text[:12000],
+                        }
+                        _critique_prompt, _critique_tracking = self.summarizer.prompt_manager.render_template(
+                            template_name="summary_self_critique",
+                            variables=_critique_vars,
+                            document_id=document_id,
+                            role_key=role.value,
+                        )
+                        _critique_body = json.dumps({
+                            "anthropic_version": "bedrock-2023-05-31",
+                            "max_tokens": 2000,
+                            "temperature": 0.1,
+                            "messages": [{"role": "user", "content": _critique_prompt}],
+                        })
+                        _critique_response = self.summarizer.bedrock.invoke_model(
+                            modelId=self.summarizer.model_id,
+                            body=_critique_body,
+                        )
+                        _critique_text = json.loads(_critique_response["body"].read())["content"][0]["text"]
+                        _json_match = re.search(r"```json\s*(.*?)\s*```", _critique_text, re.DOTALL)
+                        if _json_match:
+                            _critique_text = _json_match.group(1)
+                        _revised = json.loads(_critique_text)
+                        # Preserve prompt_tracking across the critique pass
+                        _revised["prompt_tracking"] = prompt_tracking
+                        _revised["self_critique_tracking"] = _critique_tracking
+                        corrected_summary = _revised
+                        print(f"    [self-critique] pass completed — using revised output.")
+                    except Exception as _critique_err:
+                        print(f"    [self-critique] pass failed ({_critique_err}) — keeping original output.")
 
                 # Calculate hallucination score
                 hallucination_score = role_validator.calculate_hallucination_score(

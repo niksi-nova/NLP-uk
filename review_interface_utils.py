@@ -243,7 +243,12 @@ def load_snomed_entities(snomed_json_path: Optional[str]) -> List[Dict[str, Any]
                 "text": entity.get("Text", ""),
                 "category": entity.get("Category", "Uncategorized"),
                 "snomed_code": top_concept.get("Code", ""),
-                "description": top_concept.get("Description", ""),
+                "description": (
+                    top_concept.get("PreferredTerm")
+                    or top_concept.get("preferred_term")
+                    or top_concept.get("Description")
+                    or ""
+                ),
                 "confidence": normalize_score(
                     entity.get("confidence", entity.get("Score", top_concept.get("Score", 0.0)))
                 ),

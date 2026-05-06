@@ -48,5 +48,20 @@
     "aliases": [],
     "min_dose_units": 1,
     "max_dose_units": 300
+  },
+  "normalisation_rules": {
+    "frequency_map": {
+      "OD": "once daily",
+      "BD": "twice daily",
+      "TDS": "three times daily",
+      "QDS": "four times daily",
+      "PRN": "when required",
+      "NOCTE": "at night",
+      "once a day": "once daily",
+      "twice a day": "twice daily",
+      "three times a day": "three times daily"
+    },
+    "dose_format": "numeric dose followed by a space then the unit, e.g. '3 mg' not '3mg'",
+    "preferred_format": "drug name, dose, unit, frequency in full words"
   }
 }

@@ -2,7 +2,7 @@
   "templates": {
     "medical_summarization": {
       "description": "Core medical summarization system prompt for Track B.",
-      "active_version": "v1",
+      "active_version": "v3",
       "bedrock_prompt_id": null,
       "bedrock_prompt_arn": null,
       "versions": {
@@ -17,12 +17,18 @@
           "created_by": "SYSTEM",
           "rationale": "Adds stronger ordering and contradiction checks for reproducibility.",
           "template": "You are a senior clinical summarization assistant for {role_label} review.\nPreserve chronology, avoid contradictions, and keep medication details explicit.\n\n{role_guidance}\n\n<document_type>{document_type}</document_type>\n{context_section}\n<clinical_document>\n{clinical_document}\n</clinical_document>\n\nProduce strict JSON matching this schema (no markdown):\n{output_schema}\n"
+        },
+        "v3": {
+          "created_at": "2026-05-06T00:00:00Z",
+          "created_by": "FINE_TUNE_ROUND_1",
+          "rationale": "Enforces GP-letter handover style for any NHS clinical document. Constrains summary to 2-4 sentences opening with encounter type and date. Preserves numeric precision. Enforces UK date format. Ensures medication strings are written in full.",
+          "template": "You are a senior clinical summarization assistant producing a {role_label} output for a UK NHS GP practice.\n\n{role_guidance}\n\n<document_type>{document_type}</document_type>\n{context_section}\n<clinical_document>\n{clinical_document}\n</clinical_document>\n\nRules for the summary field \u2014 follow these exactly for any document type:\n\nLENGTH AND STRUCTURE:\n- Write exactly 2 to 4 sentences. Maximum 90 words total.\n- Do not use bullet points or lists inside the summary field. Write in continuous prose.\n\nOPENING SENTENCE:\n- The first sentence must identify the encounter type and the encounter date in UK format DD/MM/YYYY. Derive both from the document itself.\n- Use the clinical event name as it appears in the document (e.g. the department name, clinic name, or encounter description followed by the date). Do not invent a label not present in the source.\n\nCONTENT TO INCLUDE:\n- Key clinical findings from this encounter.\n- Relevant negative findings that change the clinical picture (e.g. no focal neurology, no infusion reactions).\n- Investigations performed and their results if stated.\n- The discharge plan, referral, or next step.\n\nCONTENT TO EXCLUDE:\n- Patient demographics (name, address, DOB, NHS number).\n- GP or hospital contact details, salutations, signatures.\n- Information not present in the source document.\n\nPRECISION:\n- Preserve all numeric values exactly as written in the source (measurements, doses, ranges, scores, percentages).\n- All dates must be in UK format DD/MM/YYYY.\n- Medication names and doses must be written in full: drug name, numeric dose with a space before the unit, frequency as full words (e.g. 'Solifenacin 3 mg once daily').\n\nProduce strict JSON matching this schema (no markdown, no preamble, no trailing text):\n{output_schema}\n"
         }
       }
     },
     "role_based_actions": {
       "description": "Prompt segment for role-specific follow-up action generation.",
-      "active_version": "v1",
+      "active_version": "v3",
       "bedrock_prompt_id": null,
       "bedrock_prompt_arn": null,
       "versions": {
@@ -37,6 +43,12 @@
           "created_by": "SYSTEM",
           "rationale": "Improves action prioritization and review readiness.",
           "template": "Role-action policy for {role_label}:\n- Prioritize urgent/safety-critical actions first.\n- Keep each follow_up_actions item measurable and reviewable.\n- If evidence is missing, return an empty action item list.\n"
+        },
+        "v3": {
+          "created_at": "2026-05-06T00:00:00Z",
+          "created_by": "FINE_TUNE_ROUND_1",
+          "rationale": "Enforces verb-first actionable structure for any clinical document type. Preserves timing information from source. Differentiates medication changes as separate items. Works for any NHS letter \u2014 does not rely on document-specific knowledge.",
+          "template": "Role-action policy for {role_label}:\n\nGenerate follow_up_actions from the source document. Each action item must follow ALL of these rules:\n\nVERB RULE:\nEvery action must begin with an imperative verb. Choose the most accurate verb from this list based on what the source says: Refer, Arrange, Prescribe, Stop, Continue, Review, Follow up, Discuss, Monitor, Advise, Repeat, Request, Check, Notify, Counsel, Ensure.\n\nCONTENT RULE:\nEach action must answer what needs to happen, and where or to whom if stated in the source. Write as a single complete sentence. Do not use vague nouns like 'referral' or 'review' as the entire action \u2014 always state what the referral or review is for.\n\nTIMING RULE:\nIf the source states any time interval or deadline for an action (e.g. 'in 6 months', 'in 4 weeks', 'before next appointment', 'annually'), include that interval verbatim in the action_text. The structured due_date field for that action must be computed by adding that interval to the letter date. If no timing is stated, leave due_date as the default.\n\nMEDICATION CHANGE RULE:\nIf the source contains any medication start, stop, dose change, or switch, emit it as a SEPARATE action item. Prefix the action_text with exactly 'Medication change: ' followed by the instruction as written in the source (drug name, dose with space before unit, frequency in full words, route if stated).\n\nSAFETY ADVICE RULE:\nIf the source contains driving restrictions, alcohol advice, smoking advice, or falls precautions directed at the GP or patient, emit each as a separate action item prefixed with 'Advise: '.\n\nEVIDENCE RULE:\nOnly include actions explicitly supported by the source document. If no follow-up actions are stated or implied, return an empty array. Do not invent actions.\n\nLIMIT: Maximum 8 action items. Order by clinical urgency, most urgent first.\n"
         }
       }
     },
@@ -59,22 +71,38 @@
           "template": "Reliability and correction controls:\n- Never contradict source text.\n- Reject unsupported assumptions; keep unknowns as Not specified.\n- Calibrate confidence_score conservatively when source data is incomplete.\n- Return valid JSON only.\n"
         }
       }
+    },
+    "summary_self_critique": {
+      "description": "One-pass self-critique for Track B medium-confidence outputs. Triggered only when unified confidence is in the medium band (0.60 <= score < threshold). This template adds one Bedrock API call per document-role pair when triggered. Monitor usage in the CloudWatch cost dashboard.",
+      "active_version": "v1",
+      "bedrock_prompt_id": null,
+      "bedrock_prompt_arn": null,
+      "versions": {
+        "v1": {
+          "created_at": "2026-05-06T00:00:00Z",
+          "created_by": "FINE_TUNE_ROUND_1",
+          "rationale": "Single self-critique pass to recover medium-confidence outputs before routing to human review. General-purpose: works for any NHS clinical document type. Expected to resolve 30-50 percent of medium-band cases automatically.",
+          "template": "You previously produced this clinical summary for a {role_label} audience:\n\n<previous_summary>\n{previous_summary}\n</previous_summary>\n\nThe source document is:\n<clinical_document>\n{clinical_document}\n</clinical_document>\n\nPerform a strict self-critique. Check for ALL of the following error types. Fix every error you find:\n\n1. UNSUPPORTED CONTENT: Any sentence or claim in the summary that is not directly supported by the source document. Remove it.\n\n2. NUMERIC ERRORS: Any numeric value, measurement, dose, date, or range that differs from or is absent from the source. Correct it to match the source exactly.\n\n3. LATERALITY ERRORS: Any side (left/right/bilateral) or anatomical sub-site stated in the source but missing or wrong in the summary. Add or correct it.\n\n4. MISSING ACTIONS: Any follow-up action, referral, investigation, or medication change the source explicitly states that is absent from follow_up_actions. Add it.\n\n5. MEDICATION FORMAT ERRORS: Any medication name or dose not written as: drug name, numeric dose, space, unit, frequency in full words. Correct the format.\n\n6. DATE FORMAT ERRORS: Any date not in UK format DD/MM/YYYY. Correct it.\n\n7. OPENING SENTENCE: If the first sentence of summary does not state the encounter type and encounter date, rewrite it so it does.\n\nIf you find no errors, return the previous summary unchanged.\n\nReturn valid JSON conforming to exactly the same schema as the previous summary. No markdown, no preamble, no explanation \u2014 only the JSON output.\n"
+        }
+      }
     }
   },
   "ab_tests": {
     "medical_summarization": {
       "enabled": false,
       "weights": {
-        "v1": 0.5,
-        "v2": 0.5
+        "v1": 0.0,
+        "v2": 0.0,
+        "v3": 1.0
       },
       "salt": "trackb-medical-summary-exp"
     },
     "role_based_actions": {
       "enabled": false,
       "weights": {
-        "v1": 0.5,
-        "v2": 0.5
+        "v1": 0.0,
+        "v2": 0.0,
+        "v3": 1.0
       },
       "salt": "trackb-role-actions-exp"
     },
@@ -85,7 +113,14 @@
         "v2": 0.5
       },
       "salt": "trackb-error-correction-exp"
+    },
+    "summary_self_critique": {
+      "enabled": false,
+      "weights": {
+        "v1": 1.0
+      },
+      "salt": "trackb-self-critique-exp"
     }
   },
-  "last_updated": "2026-04-09T00:00:00Z"
+  "last_updated": "2026-05-06T16:46:17.077796Z"
 }
