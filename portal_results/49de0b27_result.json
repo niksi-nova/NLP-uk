@@ -1,0 +1,1610 @@
+{
+  "doc_id": "49de0b27",
+  "filename": "49de0b27_20260427172101_Redacted.pdf",
+  "processed_at": "2026-05-07T07:13:39.280419",
+  "status": "processed",
+  "pipeline_stages": {
+    "tier0": {
+      "status": "done",
+      "note": "document_handler: 2 page(s) from .PDF | OpenCV preprocessing: skipped (cv2 unavailable)"
+    },
+    "tier1": {
+      "status": "done",
+      "confidence": 0.992,
+      "pages": 2,
+      "chars_extracted": 2075
+    },
+    "tier2": {
+      "status": "skipped",
+      "note": "Textract confidence >= 90% \u2014 direct to Track A/B (SRS \u00a77 step 2)"
+    },
+    "track_a": {
+      "status": "done",
+      "entities_found": 49,
+      "confidence": 0.705
+    },
+    "hipaa": {
+      "status": "done",
+      "phi_entities_detected": 23,
+      "note": "PHI detection via hipaa_compliance.detect_phi_entities()"
+    },
+    "track_b": {
+      "status": "done",
+      "confidence": 0.8,
+      "letter_type": "Clinical Letter"
+    }
+  },
+  "requires_review": false,
+  "pages_processed": 2,
+  "preview_pages": [
+    "/pages/49de0b27/orig_01.png",
+    "/pages/49de0b27/orig_02.png"
+  ],
+  "preview_image": "/pages/49de0b27/orig_01.png",
+  "unified_confidence": 0.858,
+  "confidence_threshold": 0.72,
+  "letter_type": "Clinical Letter",
+  "hospital_trust": "Royal Berkshire Hospital NHS Foundation Trust",
+  "is_sensitive": true,
+  "patient_info": {
+    "name": "Not available",
+    "nhs_number": "Not available",
+    "dob": "Not available",
+    "sex": "Male",
+    "address": "",
+    "hospital_number": "621034",
+    "gp_practice": "",
+    "pathways_urgency": "",
+    "presenting_complaint": "",
+    "gravida_parity": "",
+    "edd": "",
+    "gestational_age": ""
+  },
+  "structured": {
+    "admission_date": "",
+    "discharge_date": "",
+    "appointment_date": "",
+    "consultant": "",
+    "department": "of Orthopaedics",
+    "hospital": "",
+    "gp_actions": "",
+    "diagnosis_text": "Left midshaft clavicular fracture",
+    "admission_method": "",
+    "discharge_method": "",
+    "procedure": "",
+    "indication": "",
+    "impression": ""
+  },
+  "clinical_specifics": {
+    "gp_address": "EASTHAMPSTEAD SURGERY, 23 RECTORY LANE"
+  },
+  "extracted_text": "Mr Duncan's Fracture Clinic\n27 APR 2006\nRoyal Berkshire\nNHS\nNHS Foundation Trust\nDepartment of Orthopaedics\nRoyal Berkshire Hospital\nLondon Road Reading . RG1 5AN\n398 A\nTel: 0118 322 7415\nrbb-tr.cat5@nhs.net\nJA MARSHALL [GP]\nEASTHAMPSTEAD SURGERY\n23 RECTORY LANE\nBRACKNELL, BERKSHIRE\nRG12 7BB\n6011\n30th March 2026\nF145Q1LTTDH\nK398 c1.54/423 b1\nIE/modl/38425207 MRN:621034\nDear Doctor\nRe:\nDOB:\nFRAMPTON TERRACE ROAD SOUTH BINFIELD RG42 4DJ\nDiagnosis\nLeft midshaft clavicular fracture\nDate of injury 4th December 2022 5.\nPlan\nRefer for CT left clavicle.\nRefer for physiotherapy.\nFor review after CT left clavicle has been done.\nI reviewed Keith today in the company of his brother. He sustained a left midshaft clavicle fracture\non the 4th December 2026 which was managed nonoperatively. He use the collar and cuff for 6\nweeks and last X-ray done January showed that the fracture was minimally displaced.\nToday he is now at least 3 months following his left clavicle injury. He tells me that he continues to\nexperience pain around the fracture site and this pain also radiates to the mid aspect of the\nclavicle.\nHe also complains that he has limitation of shoulder movement which he ascribes to the fracture.\nI examined his left shoulder and I can palpate the fracture site which is mildly tender. He also has\nsome tenderness medial to the clavicle. He has some limitation of shoulder motion and abduction\nis limited to 90\u00b0 due to pain and also some extent of stiffness. She is neurovascularly intact in his\nleft upper limb. X-ray done today shows minimal increment in visible callus at the fracture site.\nI reviewed this with Mr Patel today and the plan is for patient to have a CT of the left clavicle we\nwill review at his next visit. We will also be sending him for physiotherapy in order to improve his\nleft shoulder function. He can commence physiotherapy before he has the CT. I have relayed this\nplan to the patient and he is happy with it.\nYours sincerely\nElectronically signed\nDr Ijoukhumo Ethel Egbekun\nPage of 2\n\nCC:\nTERRACE ROAD SOUTH\nBINFIELD\nRG42 4DJ\nPage 2 of 2",
+  "icd_codes": [],
+  "medications_raw": [],
+  "snomed": {
+    "problems": [
+      {
+        "text": "fracture",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "878852003",
+        "description": "Fracture of knee (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "fc5c4c99",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "pain",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "22253000",
+        "description": "Pain (finding)",
+        "confidence": 0.9584784507751465,
+        "entity_id": "123fdb81",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "pain around the fracture site",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "733826000",
+        "description": "Pain due to fracture (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "2836b98a",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "pain",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "203509009",
+        "description": "Clavicle pain (finding)",
+        "confidence": 0.9584784507751465,
+        "entity_id": "6ca767f3",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "limitation of shoulder movement",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "70733008",
+        "description": "Limitation of joint movement (finding)",
+        "confidence": 0.8435389995574951,
+        "entity_id": "da8ee674",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "palpate the fracture site",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "263564009",
+        "description": "Site of fracture (attribute)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "ffef6391",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "tender",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "300820003",
+        "description": "Tender (qualifier value)",
+        "confidence": 0.821601390838623,
+        "entity_id": "8bafbbdf",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "tenderness medial to the clavicle",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "247348008",
+        "description": "Tenderness (finding)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "d0c24697",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "limitation of shoulder motion",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "70733008",
+        "description": "Limitation of joint movement (finding)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "6ea5083d",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "limitation of shoulder motion and abduction",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "304297005",
+        "description": "Decreased range of shoulder movement (finding)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "c59ece93",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "abduction\nis limited to 90\u00b0",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "298796006",
+        "description": "Range of shoulder abduction (observable entity)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "1d0dc5a4",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "pain",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "22253000",
+        "description": "Pain (finding)",
+        "confidence": 0.9584784507751465,
+        "entity_id": "991a650c",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "stiffness",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "271587009",
+        "description": "Stiffness (finding)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "17c2c214",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "neurovascularly intact",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "429108009",
+        "description": "Finding related to neurovascular status of limb (finding)",
+        "confidence": 0.7950295805931091,
+        "entity_id": "54cc866a",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "increment in visible callus",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "443092002",
+        "description": "Callus of bone (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "39597439",
+        "source": "comprehend_medical"
+      }
+    ],
+    "medications": [],
+    "diagnoses": [
+      {
+        "text": "Left midshaft clavicular fracture",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "58150001",
+        "description": "Fracture of clavicle (disorder)",
+        "confidence": 0.7950295805931091,
+        "entity_id": "106af5b2",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "injury",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "282760004",
+        "description": "Clavicle injury (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "f52dc783",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "left midshaft clavicle fracture",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "58150001",
+        "description": "Fracture of clavicle (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "086caf26",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "left clavicle injury",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "282760004",
+        "description": "Clavicle injury (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "984d37f2",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "fracture",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "16250001000004107",
+        "description": "Fracture of shoulder (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "f4c18f32",
+        "source": "comprehend_medical"
+      }
+    ],
+    "all_entities": [
+      {
+        "Id": 2,
+        "Text": "EASTHAMPSTEAD",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 225,
+        "EndOffset": 238,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "East Sussex (geographic location)",
+            "Code": "223877005",
+            "Score": 0.00039069418562576175
+          },
+          {
+            "Description": "Structure of zone of internal carotid artery (body structure)",
+            "Code": "244206006",
+            "Score": 3.41403647325933e-05
+          },
+          {
+            "Description": "Structure of alveolar duct of lung (body structure)",
+            "Code": "23622000",
+            "Score": 3.1199888326227665e-05
+          },
+          {
+            "Description": "pT4b: Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base or encases internal carotid artery (oropharynx) (finding)",
+            "Code": "406001009",
+            "Score": 3.1109568226384e-05
+          },
+          {
+            "Description": "Anatomic location of excised primary malignant neoplasm (observable entity)",
+            "Code": "1136681000004107",
+            "Score": 2.9614198865601793e-05
+          }
+        ]
+      },
+      {
+        "Id": 3,
+        "Text": "EASTHAMPSTEAD SURGERY",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 225,
+        "EndOffset": 246,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Surgery (qualifier value)",
+            "Code": "257556004",
+            "Score": 0.01875321939587593
+          },
+          {
+            "Description": "Surgery care (regime/therapy)",
+            "Code": "736770009",
+            "Score": 0.011953030712902546
+          },
+          {
+            "Description": "Surgical procedure (procedure)",
+            "Code": "387713003",
+            "Score": 0.009652340784668922
+          },
+          {
+            "Description": "General surgery (qualifier value)",
+            "Code": "394609007",
+            "Score": 0.00962132215499878
+          },
+          {
+            "Description": "History of surgery (situation)",
+            "Code": "161615003",
+            "Score": 0.008617967367172241
+          }
+        ]
+      },
+      {
+        "Id": 6,
+        "Text": "Left midshaft clavicular",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 449,
+        "EndOffset": 473,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.16897103190422058
+          },
+          {
+            "Description": "Structure of shaft of left clavicle (body structure)",
+            "Code": "774165003",
+            "Score": 0.13676685094833374
+          },
+          {
+            "Description": "Structure of middle third of clavicle (body structure)",
+            "Code": "263385008",
+            "Score": 0.07866781949996948
+          },
+          {
+            "Description": "Structure of midshaft of tibia (body structure)",
+            "Code": "78492002",
+            "Score": 0.06703338027000427
+          },
+          {
+            "Description": "Structure of acromial end of left clavicle (body structure)",
+            "Code": "720620003",
+            "Score": 0.0622127503156662
+          }
+        ]
+      },
+      {
+        "Id": 7,
+        "Text": "Left midshaft clavicular fracture",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 449,
+        "EndOffset": 482,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "DIRECTION",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.7814922332763672,
+            "RelationshipType": "DIRECTION",
+            "Id": 5,
+            "BeginOffset": 449,
+            "EndOffset": 453,
+            "Text": "Left",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Left (qualifier value)",
+                "Code": "7771000",
+                "Score": 0.41910457611083984
+              },
+              {
+                "Description": "Bone structure of left clavicle (body structure)",
+                "Code": "720617006",
+                "Score": 0.004253407474607229
+              },
+              {
+                "Description": "Structure of left half of body (body structure)",
+                "Code": "31156008",
+                "Score": 0.004223638214170933
+              },
+              {
+                "Description": "Structure of left postauricular region (body structure)",
+                "Code": "763812002",
+                "Score": 0.004026931710541248
+              },
+              {
+                "Description": "Structure of left cervical vertebral artery (body structure)",
+                "Code": "724084000",
+                "Score": 0.003990075550973415
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7172441482543945,
+            "RelationshipScore": 0.7223333120346069,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 6,
+            "BeginOffset": 449,
+            "EndOffset": 473,
+            "Text": "Left midshaft clavicular",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Bone structure of left clavicle (body structure)",
+                "Code": "720617006",
+                "Score": 0.16897103190422058
+              },
+              {
+                "Description": "Structure of shaft of left clavicle (body structure)",
+                "Code": "774165003",
+                "Score": 0.13676685094833374
+              },
+              {
+                "Description": "Structure of middle third of clavicle (body structure)",
+                "Code": "263385008",
+                "Score": 0.07866781949996948
+              },
+              {
+                "Description": "Structure of midshaft of tibia (body structure)",
+                "Code": "78492002",
+                "Score": 0.06703338027000427
+              },
+              {
+                "Description": "Structure of acromial end of left clavicle (body structure)",
+                "Code": "720620003",
+                "Score": 0.0622127503156662
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "DIRECTION",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "DIRECTION",
+            "Id": 8,
+            "BeginOffset": 454,
+            "EndOffset": 462,
+            "Text": "midshaft",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Structure of midshaft of femur (body structure)",
+                "Code": "60613003",
+                "Score": 0.04354243353009224
+              },
+              {
+                "Description": "Structure of midshaft of tibia (body structure)",
+                "Code": "78492002",
+                "Score": 0.034492336213588715
+              },
+              {
+                "Description": "Structure of midshaft of fibula (body structure)",
+                "Code": "72650005",
+                "Score": 0.02597529999911785
+              },
+              {
+                "Description": "Structure of midshaft of humerus (body structure)",
+                "Code": "78835006",
+                "Score": 0.017736075446009636
+              },
+              {
+                "Description": "Structure of midshaft of radius (body structure)",
+                "Code": "16708002",
+                "Score": 0.017637521028518677
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.8203471899032593
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Fracture of clavicle (disorder)",
+            "Code": "58150001",
+            "Score": 0.4039323627948761
+          },
+          {
+            "Description": "Closed fracture of left clavicle (disorder)",
+            "Code": "10929521000119105",
+            "Score": 0.35444530844688416
+          },
+          {
+            "Description": "Closed fracture of shaft of left clavicle (disorder)",
+            "Code": "10929321000119101",
+            "Score": 0.33094823360443115
+          },
+          {
+            "Description": "Fracture of shaft of clavicle (disorder)",
+            "Code": "41972004",
+            "Score": 0.31543195247650146
+          },
+          {
+            "Description": "Pathological fracture of left clavicle (disorder)",
+            "Code": "11306001000119107",
+            "Score": 0.27317506074905396
+          }
+        ]
+      },
+      {
+        "Id": 9,
+        "Text": "injury",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 491,
+        "EndOffset": 497,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Clavicle injury (disorder)",
+            "Code": "282760004",
+            "Score": 0.41295456886291504
+          },
+          {
+            "Description": "Traumatic or non-traumatic injury (disorder)",
+            "Code": "417163006",
+            "Score": 0.2445518523454666
+          },
+          {
+            "Description": "Injury of cervical spine (disorder)",
+            "Code": "262522002",
+            "Score": 0.22126981616020203
+          },
+          {
+            "Description": "Crush injury clavicular region (disorder)",
+            "Code": "283857009",
+            "Score": 0.19040629267692566
+          },
+          {
+            "Description": "Injury of left shoulder (disorder)",
+            "Code": "11780921000119100",
+            "Score": 0.16590802371501923
+          }
+        ]
+      },
+      {
+        "Id": 11,
+        "Text": "CT left clavicle",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 534,
+        "EndOffset": 550,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Computed tomography of left clavicle (procedure)",
+            "Code": "4191000087102",
+            "Score": 0.4004013240337372
+          },
+          {
+            "Description": "Computed tomography of clavicle (procedure)",
+            "Code": "432552002",
+            "Score": 0.19763553142547607
+          },
+          {
+            "Description": "Computed tomography of left clavicle with contrast (procedure)",
+            "Code": "4801000087104",
+            "Score": 0.08177289366722107
+          },
+          {
+            "Description": "Computed tomography of clavicle with contrast (procedure)",
+            "Code": "702493004",
+            "Score": 0.044752735644578934
+          },
+          {
+            "Description": "Computed tomography of right clavicle (procedure)",
+            "Code": "4201000087100",
+            "Score": 0.029667381197214127
+          }
+        ]
+      },
+      {
+        "Id": 13,
+        "Text": "left clavicle",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.821601390838623,
+        "BeginOffset": 537,
+        "EndOffset": 550,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.2864826023578644
+          },
+          {
+            "Description": "Computed tomography of left clavicle (procedure)",
+            "Code": "4191000087102",
+            "Score": 0.25468921661376953
+          },
+          {
+            "Description": "Structure of shaft of left clavicle (body structure)",
+            "Code": "774165003",
+            "Score": 0.07953367382287979
+          },
+          {
+            "Description": "Computed tomography of clavicle (procedure)",
+            "Code": "432552002",
+            "Score": 0.06868740916252136
+          },
+          {
+            "Description": "Bone structure of clavicle (body structure)",
+            "Code": "51299004",
+            "Score": 0.06373023986816406
+          }
+        ]
+      },
+      {
+        "Id": 14,
+        "Text": "physiotherapy",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TREATMENT_NAME",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 562,
+        "EndOffset": 575,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Physiotherapy (qualifier value)",
+            "Code": "722138006",
+            "Score": 0.7769741415977478
+          },
+          {
+            "Description": "Referral to physiotherapy service (procedure)",
+            "Code": "306170007",
+            "Score": 0.5594123005867004
+          },
+          {
+            "Description": "Referral to physiotherapist (procedure)",
+            "Code": "308447003",
+            "Score": 0.4920107424259186
+          },
+          {
+            "Description": "Referral by physiotherapist (procedure)",
+            "Code": "306079006",
+            "Score": 0.48887720704078674
+          },
+          {
+            "Description": "Child referral - physiotherapy (procedure)",
+            "Code": "309628002",
+            "Score": 0.42258745431900024
+          }
+        ]
+      },
+      {
+        "Id": 15,
+        "Text": "CT left clavicle",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 594,
+        "EndOffset": 610,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Computed tomography of left clavicle (procedure)",
+            "Code": "4191000087102",
+            "Score": 0.5237990617752075
+          },
+          {
+            "Description": "Computed tomography of clavicle (procedure)",
+            "Code": "432552002",
+            "Score": 0.41226208209991455
+          },
+          {
+            "Description": "Computed tomography of left clavicle with contrast (procedure)",
+            "Code": "4801000087104",
+            "Score": 0.16559574007987976
+          },
+          {
+            "Description": "Computed tomography of clavicle with contrast (procedure)",
+            "Code": "702493004",
+            "Score": 0.12592025101184845
+          },
+          {
+            "Description": "Computed tomography of right clavicle (procedure)",
+            "Code": "4201000087100",
+            "Score": 0.10438741743564606
+          }
+        ]
+      },
+      {
+        "Id": 17,
+        "Text": "left clavicle",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.877546489238739,
+        "BeginOffset": 597,
+        "EndOffset": 610,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Computed tomography of left clavicle (procedure)",
+            "Code": "4191000087102",
+            "Score": 0.356735497713089
+          },
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.2411150336265564
+          },
+          {
+            "Description": "Computed tomography of clavicle (procedure)",
+            "Code": "432552002",
+            "Score": 0.13843266665935516
+          },
+          {
+            "Description": "Plain X-ray of left clavicle (procedure)",
+            "Code": "3501000087100",
+            "Score": 0.07464268058538437
+          },
+          {
+            "Description": "Structure of shaft of left clavicle (body structure)",
+            "Code": "774165003",
+            "Score": 0.07357579469680786
+          }
+        ]
+      },
+      {
+        "Id": 20,
+        "Text": "left midshaft clavicle",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7613970637321472,
+        "BeginOffset": 695,
+        "EndOffset": 717,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.22063682973384857
+          },
+          {
+            "Description": "Structure of shaft of left clavicle (body structure)",
+            "Code": "774165003",
+            "Score": 0.15822160243988037
+          },
+          {
+            "Description": "Bone structure of clavicle (body structure)",
+            "Code": "51299004",
+            "Score": 0.0925944596529007
+          },
+          {
+            "Description": "Structure of shaft of clavicle (body structure)",
+            "Code": "12981001",
+            "Score": 0.059331703931093216
+          },
+          {
+            "Description": "Structure of acromial end of left clavicle (body structure)",
+            "Code": "720620003",
+            "Score": 0.050756800919771194
+          }
+        ]
+      },
+      {
+        "Id": 21,
+        "Text": "left midshaft clavicle fracture",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 695,
+        "EndOffset": 726,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "DIRECTION",
+            "Score": 0.7172441482543945,
+            "RelationshipScore": 0.6795811653137207,
+            "RelationshipType": "DIRECTION",
+            "Id": 19,
+            "BeginOffset": 695,
+            "EndOffset": 699,
+            "Text": "left",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Left (qualifier value)",
+                "Code": "7771000",
+                "Score": 0.5485591888427734
+              },
+              {
+                "Description": "Left sided (qualifier value)",
+                "Code": "263795004",
+                "Score": 0.004254991188645363
+              },
+              {
+                "Description": "Structure of left postauricular region (body structure)",
+                "Code": "763812002",
+                "Score": 0.0027239343617111444
+              },
+              {
+                "Description": "Structure of left choana (body structure)",
+                "Code": "1187101006",
+                "Score": 0.0021679282654076815
+              },
+              {
+                "Description": "Structure of left half of neck (body structure)",
+                "Code": "170583000",
+                "Score": 0.001987070543691516
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7613970637321472,
+            "RelationshipScore": 0.7552722692489624,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 20,
+            "BeginOffset": 695,
+            "EndOffset": 717,
+            "Text": "left midshaft clavicle",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Bone structure of left clavicle (body structure)",
+                "Code": "720617006",
+                "Score": 0.22063682973384857
+              },
+              {
+                "Description": "Structure of shaft of left clavicle (body structure)",
+                "Code": "774165003",
+                "Score": 0.15822160243988037
+              },
+              {
+                "Description": "Bone structure of clavicle (body structure)",
+                "Code": "51299004",
+                "Score": 0.0925944596529007
+              },
+              {
+                "Description": "Structure of shaft of clavicle (body structure)",
+                "Code": "12981001",
+                "Score": 0.059331703931093216
+              },
+              {
+                "Description": "Structure of acromial end of left clavicle (body structure)",
+                "Code": "720620003",
+                "Score": 0.050756800919771194
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "DIRECTION",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "DIRECTION",
+            "Id": 22,
+            "BeginOffset": 700,
+            "EndOffset": 708,
+            "Text": "midshaft",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Structure of midshaft of femur (body structure)",
+                "Code": "60613003",
+                "Score": 0.11596618592739105
+              },
+              {
+                "Description": "Structure of midshaft of tibia (body structure)",
+                "Code": "78492002",
+                "Score": 0.08938471227884293
+              },
+              {
+                "Description": "Structure of midshaft of fibula (body structure)",
+                "Code": "72650005",
+                "Score": 0.0850711315870285
+              },
+              {
+                "Description": "Structure of midshaft of radius (body structure)",
+                "Code": "16708002",
+                "Score": 0.055190976709127426
+              },
+              {
+                "Description": "Structure of midshaft of humerus (body structure)",
+                "Code": "78835006",
+                "Score": 0.05192183703184128
+              }
+            ]
+          },
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.5330596566200256,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "QUALITY",
+            "Id": 24,
+            "BeginOffset": 762,
+            "EndOffset": 784,
+            "Text": "managed nonoperatively",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Operation performed (attribute)",
+                "Code": "260898007",
+                "Score": 0.08549458533525467
+              },
+              {
+                "Description": "Inoperable (qualifier value)",
+                "Code": "74778001",
+                "Score": 0.06563571095466614
+              },
+              {
+                "Description": "Procedure declined - uncooperative (situation)",
+                "Code": "183946001",
+                "Score": 0.06236248090863228
+              },
+              {
+                "Description": "Procedure not done (situation)",
+                "Code": "416237000",
+                "Score": 0.050424981862306595
+              },
+              {
+                "Description": "Finding related to non-diagnostic procedure (finding)",
+                "Code": "103694001",
+                "Score": 0.04846397042274475
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.7299559712409973
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Fracture of clavicle (disorder)",
+            "Code": "58150001",
+            "Score": 0.4343104064464569
+          },
+          {
+            "Description": "Fracture of shaft of clavicle (disorder)",
+            "Code": "41972004",
+            "Score": 0.29464608430862427
+          },
+          {
+            "Description": "Closed fracture of shaft of left clavicle (disorder)",
+            "Code": "10929321000119101",
+            "Score": 0.19207243621349335
+          },
+          {
+            "Description": "Closed fracture of left clavicle (disorder)",
+            "Code": "10929521000119105",
+            "Score": 0.18831172585487366
+          },
+          {
+            "Description": "Closed fracture of clavicle (disorder)",
+            "Code": "33173003",
+            "Score": 0.18611645698547363
+          }
+        ]
+      },
+      {
+        "Id": 25,
+        "Text": "use the collar and cuff",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TREATMENT_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 789,
+        "EndOffset": 812,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Application of collar and cuff sling (procedure)",
+            "Code": "239694007",
+            "Score": 0.2406449317932129
+          },
+          {
+            "Description": "Maintenance of cervical collar (procedure)",
+            "Code": "79821001",
+            "Score": 0.22695760428905487
+          },
+          {
+            "Description": "Application of cervical collar (procedure)",
+            "Code": "49689007",
+            "Score": 0.1563045084476471
+          },
+          {
+            "Description": "Provision of collar (procedure)",
+            "Code": "228597006",
+            "Score": 0.15058080852031708
+          },
+          {
+            "Description": "Using device (attribute)",
+            "Code": "424226004",
+            "Score": 0.13140468299388885
+          }
+        ]
+      },
+      {
+        "Id": 27,
+        "Text": "X-ray",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 834,
+        "EndOffset": 839,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PAST_HISTORY",
+            "Score": 0.5752319693565369
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Plain X-ray of left shoulder (procedure)",
+            "Code": "3761000087109",
+            "Score": 0.1534876972436905
+          },
+          {
+            "Description": "Radiographic imaging procedure (procedure)",
+            "Code": "363680008",
+            "Score": 0.13340550661087036
+          },
+          {
+            "Description": "Carpal bones X-ray (procedure)",
+            "Code": "271311001",
+            "Score": 0.12792262434959412
+          },
+          {
+            "Description": "Plain X-ray of left hand (procedure)",
+            "Code": "3621000087107",
+            "Score": 0.12154312431812286
+          },
+          {
+            "Description": "Plain X-ray of left wrist (procedure)",
+            "Code": "3821000087108",
+            "Score": 0.11510626971721649
+          }
+        ]
+      },
+      {
+        "Id": 29,
+        "Text": "fracture",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 869,
+        "EndOffset": 877,
+        "Attributes": [
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "QUALITY",
+            "Id": 30,
+            "BeginOffset": 882,
+            "EndOffset": 901,
+            "Text": "minimally displaced",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Displaced (qualifier value)",
+                "Code": "263739008",
+                "Score": 0.4422280490398407
+              },
+              {
+                "Description": "Displacement (attribute)",
+                "Code": "276626008",
+                "Score": 0.20019523799419403
+              },
+              {
+                "Description": "Lateral displacement (qualifier value)",
+                "Code": "257804001",
+                "Score": 0.12183504551649094
+              },
+              {
+                "Description": "Fracture, ununited, with displacement (morphologic abnormality)",
+                "Code": "123739008",
+                "Score": 0.113674096763134
+              },
+              {
+                "Description": "Displacements - bone (disorder)",
+                "Code": "263003007",
+                "Score": 0.11105052381753922
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "SIGN",
+            "Score": 0.7299559712409973
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Fracture of knee (disorder)",
+            "Code": "878852003",
+            "Score": 0.39400234818458557
+          },
+          {
+            "Description": "Fracture of bone of left shoulder (disorder)",
+            "Code": "460351000124104",
+            "Score": 0.384615957736969
+          },
+          {
+            "Description": "Fracture of bone (disorder)",
+            "Code": "125605004",
+            "Score": 0.3776554465293884
+          },
+          {
+            "Description": "Fracture of bone of left hand (disorder)",
+            "Code": "460161000124100",
+            "Score": 0.3717324435710907
+          },
+          {
+            "Description": "Fracture, oblique (morphologic abnormality)",
+            "Code": "7905002",
+            "Score": 0.35852324962615967
+          }
+        ]
+      },
+      {
+        "Id": 34,
+        "Text": "left clavicle",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.8921527862548828,
+        "BeginOffset": 951,
+        "EndOffset": 964,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.30202025175094604
+          },
+          {
+            "Description": "Structure of shaft of left clavicle (body structure)",
+            "Code": "774165003",
+            "Score": 0.07131608575582504
+          },
+          {
+            "Description": "Bone structure of clavicle (body structure)",
+            "Code": "51299004",
+            "Score": 0.05799119174480438
+          },
+          {
+            "Description": "Structure of acromial end of left clavicle (body structure)",
+            "Code": "720620003",
+            "Score": 0.040060799568891525
+          },
+          {
+            "Description": "Neoplasm of left clavicle (disorder)",
+            "Code": "460061000124104",
+            "Score": 0.037637367844581604
+          }
+        ]
+      },
+      {
+        "Id": 35,
+        "Text": "left clavicle injury",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 951,
+        "EndOffset": 971,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "DIRECTION",
+            "Score": 0.821601390838623,
+            "RelationshipScore": 0.8219892978668213,
+            "RelationshipType": "DIRECTION",
+            "Id": 33,
+            "BeginOffset": 951,
+            "EndOffset": 955,
+            "Text": "left",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Left (qualifier value)",
+                "Code": "7771000",
+                "Score": 0.7310000658035278
+              },
+              {
+                "Description": "Left sided (qualifier value)",
+                "Code": "263795004",
+                "Score": 0.00862038042396307
+              },
+              {
+                "Description": "Bone structure of left clavicle (body structure)",
+                "Code": "720617006",
+                "Score": 0.005907506216317415
+              },
+              {
+                "Description": "Bone structure of left tarsus (body structure)",
+                "Code": "764649004",
+                "Score": 0.004430029075592756
+              },
+              {
+                "Description": "Left direction (qualifier value)",
+                "Code": "272139009",
+                "Score": 0.0041804928332567215
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.8921527862548828,
+            "RelationshipScore": 0.9234480857849121,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 34,
+            "BeginOffset": 951,
+            "EndOffset": 964,
+            "Text": "left clavicle",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Bone structure of left clavicle (body structure)",
+                "Code": "720617006",
+                "Score": 0.30202025175094604
+              },
+              {
+                "Description": "Structure of shaft of left clavicle (body structure)",
+                "Code": "774165003",
+                "Score": 0.07131608575582504
+              },
+              {
+                "Description": "Bone structure of clavicle (body structure)",
+                "Code": "51299004",
+                "Score": 0.05799119174480438
+              },
+              {
+                "Description": "Structure of acromial end of left clavicle (body structure)",
+                "Code": "720620003",
+                "Score": 0.040060799568891525
+              },
+              {
+                "Description": "Neoplasm of left clavicle (disorder)",
+                "Code": "460061000124104",
+                "Score": 0.037637367844581604
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Clavicle injury (disorder)",
+            "Code": "282760004",
+            "Score": 0.588870644569397
+          },
+          {
+            "Description": "Open fracture of left clavicle (disorder)",
+            "Code": "10819941000119106",
+            "Score": 0.15020307898521423
+          },
+          {
+            "Description": "Closed fracture of left clavicle (disorder)",
+            "Code": "10929521000119105",
+            "Score": 0.1430628001689911
+          },
+          {
+            "Description": "Stress fracture of left clavicle (disorder)",
+            "Code": "11314001000119104",
+            "Score": 0.12989085912704468
+          },
+          {
+            "Description": "Bone structure of left clavicle (body structure)",
+            "Code": "720617006",
+            "Score": 0.12809932231903076
+          }
+        ]
+      },
+      {
+        "Id": 37,
+        "Text": "pain",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.9584784507751465,
+        "BeginOffset": 1017,
+        "EndOffset": 1021,
+        "Attributes": [
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "QUALITY",
+            "Id": 36,
+            "BeginOffset": 993,
+            "EndOffset": 1002,
+            "Text": "continues",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Continual (qualifier value)",
+                "Code": "263730007",
+                "Score": 0.23026731610298157
+              },
+              {
+                "Description": "Continuous (qualifier value)",
+                "Code": "255238004",
+                "Score": 0.04341599717736244
+              },
+              {
+                "Description": "Repeat (qualifier value)",
+                "Code": "27582007",
+                "Score": 0.01761460304260254
+              },
+              {
+                "Description": "Ongoing episode (qualifier value)",
+                "Code": "303350001",
+                "Score": 0.015686720609664917
+              },
+              {
+                "Description": "Sustained (qualifier value)",
+                "Code": "263892007",
+                "Score": 0.011797572486102581
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "SYMPTOM",
+            "Score": 0.8203471899032593
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Pain (finding)",
+            "Code": "22253000",
+            "Score": 0.3027227222919464
+          },
+          {
+            "Description": "Pain due to fracture (finding)",
+            "Code": "733826000",
+            "Score": 0.06685943156480789
+          },
+          {
+            "Description": "Pain in left foot (finding)",
+            "Code": "316751000119107",
+            "Score": 0.06603195518255234
+          },
+          {
+            "Description": "Pain observable (observable entity)",
+            "Code": "406189006",
+            "Score": 0.06261143088340759
+          },
+          {
+            "Description": "Pain in spine (finding)",
+            "Code": "48926009",
+            "Score": 0.05619525909423828
+          }
+        ]
+      },
+      {
+        "Id": 38,
+        "Text": "pain around the fracture site",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1017,
+        "EndOffset": 1046,
+        "Attributes": [
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.5692254304885864,
+            "RelationshipType": "QUALITY",
+            "Id": 36,
+            "BeginOffset": 993,
+            "EndOffset": 1002,
+            "Text": "continues",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Continual (qualifier value)",
+                "Code": "263730007",
+                "Score": 0.23026731610298157
+              },
+              {
+                "Description": "Continuous (qualifier value)",
+                "Code": "255238004",
+                "Score": 0.04341599717736244
+              },
+              {
+                "Description": "Repeat (qualifier value)",
+                "Code": "27582007",
+                "Score": 0.01761460304260254
+              },
+              {
+                "Description": "Ongoing episode (qualifier value)",
+                "Code": "303350001",
+                "Score": 0.015686720609664917
+              },
+              {
+                "Description": "Sustained (qualifier value)",
+                "Code": "263892007",
+                "Score": 0.011797572486102581
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5330596566200256,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 39,
+            "BeginOffset": 1022,
+            "EndOffset": 1046,
+            "Text": "around the fracture site",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Site of fracture (attribute)",
+                "Code": "263564009",
+                "Score": 0.0989646166563034
+              },
+              {
+                "Description": "Site of break (attribute)",
+                "Code": "246301001",
+                "Score": 0.058317553251981735
+              },
+              {
+                "Description": "Site of encounter (finding)",
+                "Code": "185201007",
+                "Score": 0.05379517748951912
+              },
+              {
+                "Description": "Site of (attribute)",
+                "Code": "272737002",
+                "Score": 0.05306820943951607
+              },
+              {
+                "Description": "Fracture clinic (environment)",
+                "Code": "702858002",
+                "Score": 0.04548804089426994
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "SYMPTOM",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Pain due to fracture (finding)",
+            "Code": "733826000",
+            "Score": 0.1792217195034027
+          },
+          {
+            "Description": "Pain (finding)",
+            "Code": "22253000",
+            "Score": 0.17096708714962006
+          },
+          {
+            "Description": "Pain finding at anatomical site (finding)",
+            "Code": "279001004",
+            "Score": 0.08663991093635559
+          },
+          {
+            "Description": "Pain in left foot (finding)",
+            "Code": "316751000119107",
+            "Score": 0.07519152015447617
+          },
+          {
+            "Description": "Pain in spine (finding)",
+            "Code": "48926009",
+            "Score": 0.07334029674530029
+          }
+        ]
+      },
+      {
+        "Id": 39,
+        "Text": "around the fracture site",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1022,
+        "EndOffset": 1046,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Site of fracture (attribute)",
+            "Code": "263564009",
+            "Score": 0.0989646166563034
+          },
+          {
+            "Description": "Site of break (attribute)",
+            "Code": "246301001",
+            "Score": 0.058317553251981735
+          },
+          {
+            "Description": "Site of encounter (finding)",
+            "Code": "185201007",
+            "Score": 0.05379517748951912
+          },
+          {
+            "Description": "Site of (attribute)",
+            "Code": "272737002",
+            "Score": 0.05306820943951607
+          },
+          {
+            "Description": "Fracture clinic (environment)",
+            "Code": "702858002",
+            "Score": 0.04548804089426994
+          }
+        ]
+      }
+    ],
+    "used_fallback": false,
+    "top3_fallback": [],
+    "used_summary_fallback": false,
+    "used_doctype_fallback": false
+  },
+  "summaries": {
+    "clinician": {
+      "summary": "Male patient presented with left midshaft clavicular fracture sustained on 04/12/2022. Managed non-operatively with collar and cuff for 6 weeks. Now 3 months post-injury, still experiencing pain, limited shoulder movement and tenderness. Referred for CT left clavicle and physiotherapy",
+      "confidence": 0.8
+    },
+    "patient": {
+      "summary": "male patient has a fracture of the middle part of his collarbone. The fracture has not fully healed and is still causing him pain and difficulty moving his left shoulder. The doctor has recommended the patient have a CT scan of the collarbone and start physiotherapy to help improve the movement and strength of the shoulder. The patient will return for another appointment after the CT scan to discuss the results and next steps in his care",
+      "confidence": 0.8
+    },
+    "pharmacist": {
+      "summary": "No medications were documented in the provided clinical letter. The letter focuses on the assessment and management of a left midshaft clavicular fracture. The key points are:\n\nLeft midshaft clavicular fracture sustained on 4/12/2022. Managed non-operatively with a collar and cuff for 6 weeks. X-ray in January showed minimal displacement. \nPatient continues to experience pain around the fracture site and limitation of shoulder movement 3 months post-injury. \nExamination findings include tenderness at the fracture site, limited shoulder abduction to 90 degrees, and minimal increase in callus on recent X-ray.\nPlan is for CT scan of the left clavicle and referral to physiotherapy to improve shoulder function. Patient is to be reviewed after the CT scan.\nNo medications were mentioned in the letter.",
+      "confidence": 0.8
+    },
+    "follow_up_actions": "1. Refer patient for CT of the left clavicle. (Specialist)\n2. Refer patient for physiotherapy to improve left shoulder function. (Specialist)\n3. Review patient after CT of left clavicle has been done. (Specialist)\n4. Repeat X-ray to assess fracture healing and callus formation. (Specialist)\n5. Repeat haemoglobin (Hb) in 6-8 weeks to monitor for anaemia. (GP)",
+    "gp_actions": "1. Refer patient for CT of the left clavicle as planned.\n2. Refer patient for physiotherapy to improve left shoulder function.\n3. Review patient after the CT scan of the left clavicle has been done.\n4. Monitor patient's progress and provide follow-up care, including repeating X-rays as needed.",
+    "llm_confidence": 0.8
+  },
+  "gp_actions": "1. Refer patient for CT of the left clavicle as planned.\n2. Refer patient for physiotherapy to improve left shoulder function.\n3. Review patient after the CT scan of the left clavicle has been done.\n4. Monitor patient's progress and provide follow-up care, including repeating X-rays as needed.",
+  "follow_up_actions": "1. Refer patient for CT of the left clavicle. (Specialist)\n2. Refer patient for physiotherapy to improve left shoulder function. (Specialist)\n3. Review patient after CT of left clavicle has been done. (Specialist)\n4. Repeat X-ray to assess fracture healing and callus formation. (Specialist)\n5. Repeat haemoglobin (Hb) in 6-8 weeks to monitor for anaemia. (GP)",
+  "phi_entity_count": 23
+}

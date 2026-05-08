@@ -1,0 +1,1376 @@
+{
+  "doc_id": "882e2179",
+  "filename": "882e2179_20260427172726_Redacted.pdf",
+  "processed_at": "2026-05-07T07:20:09.250704",
+  "status": "processed",
+  "pipeline_stages": {
+    "tier0": {
+      "status": "done",
+      "note": "document_handler: 2 page(s) from .PDF | OpenCV preprocessing: skipped (cv2 unavailable)"
+    },
+    "tier1": {
+      "status": "done",
+      "confidence": 0.993,
+      "pages": 2,
+      "chars_extracted": 2483
+    },
+    "tier2": {
+      "status": "skipped",
+      "note": "Textract confidence >= 90% \u2014 direct to Track A/B (SRS \u00a77 step 2)"
+    },
+    "track_a": {
+      "status": "done",
+      "entities_found": 43,
+      "confidence": 0.684
+    },
+    "hipaa": {
+      "status": "done",
+      "phi_entities_detected": 35,
+      "note": "PHI detection via hipaa_compliance.detect_phi_entities()"
+    },
+    "track_b": {
+      "status": "done",
+      "confidence": 0.8,
+      "letter_type": "Paediatric Cardiology Letter"
+    }
+  },
+  "requires_review": false,
+  "pages_processed": 2,
+  "preview_pages": [
+    "/pages/882e2179/orig_01.png",
+    "/pages/882e2179/orig_02.png"
+  ],
+  "preview_image": "/pages/882e2179/orig_01.png",
+  "unified_confidence": 0.854,
+  "confidence_threshold": 0.7,
+  "letter_type": "Paediatric Cardiology Letter",
+  "hospital_trust": "Unknown Trust",
+  "is_sensitive": true,
+  "patient_info": {
+    "name": "GP Letter",
+    "nhs_number": "Not available",
+    "dob": "Not available",
+    "sex": "Female",
+    "address": "",
+    "hospital_number": "11088659",
+    "gp_practice": "",
+    "pathways_urgency": "",
+    "presenting_complaint": "",
+    "gravida_parity": "",
+    "edd": "",
+    "gestational_age": ""
+  },
+  "structured": {
+    "admission_date": "",
+    "discharge_date": "",
+    "appointment_date": "",
+    "consultant": "Rheumatologist",
+    "department": "Doctor in Paediatric Cardiology",
+    "hospital": "",
+    "gp_actions": "",
+    "diagnosis_text": "TGF-beta receptor 2 mutation",
+    "admission_method": "",
+    "discharge_method": "",
+    "procedure": "",
+    "indication": "",
+    "impression": ""
+  },
+  "clinical_specifics": {
+    "cardiac_diagnosis": "(this visit)"
+  },
+  "extracted_text": "NHS Confidential: Personal Data About a Patient\nDate:\n22/04/2026\nNHS\nDocument:\nCardiology Clinic Letter\n27 APR 2026\nOxford University Hospitals\nPatient:\nNHS Foundation Trust\nDoB:\nMRN:\n11088659\nNHS:\nAddress:\n, 3 Hayley Green, BRACKNELL, RG42 3BT\nDepartment\nPaediatric Cardiology Department - Dr Bernadette Brent - Paediatric Cardiology Clinic\nChildren's Hospital, John Radcliffe Hospital\nDate seen: 20/04/2026.\nLetter status: Final.\nGP Letter\nDiagnosis (this visit)\nTGF-beta receptor 2 mutation\nFamily history of Loeys-Dietz Syndrome\nResults Review\nWeight 16.2kg, height 95cm\nDear Colleague\nIt was a pleasure to meet Alexis and her mum for a cardiac assessment as part of her review in the\ninherited aortopathy clinic. Alexis is now 21-month-old and she has inherited her mother's\nmutation in TGF-beta receptor 2. Mum told me that she and her dad had been followed up initially\nfor suspected Marfan's syndrome but she was then discharged as her genetics were negative.\nWhen she presented with a spinal fluid leak however full genome sequencing was done and she\nwas found to have Loeys-Dietz Syndrome and her dad was subsequently also found to have the\nmutation.\nAlexis is really well and thriving nicely with no cardiac symptoms.\nClinical examination revealed regular, good volume pulses and synchronous femorals. Auscultation\nrevealed normal heart sounds and no murmur.\nEcho was quite challenging as Alexis did not enjoy the experience. No ECG leads were placed. The\nchambers looked balanced and there was good biventricular function and no obvious valve\npathology. The aorta was not dilated, measuring 18.7mm at the sinuses (+0.84). The aortic arch was\nunobstructed. There was no obvious intracardiac shunt.\nI am pleased to report that Alexis heart looks normal at this stage. I explained we will continue to\nmonitor her progress and will attempt another full echo in 1 year's time in this clinic.\nNC0B0IVT000057020200\nCardiology Clinic Letter\n22/Apr/2026 14:02:32\n3 of 4\n\nNHS Confidential: Personal Data About a Patient\nMRN:11088659\nYours Sincerely,\nsigned electronically\nDr Bernadette Brent\nSpecialty Doctor in Paediatric Cardiology\nSwitch Board: 0300 304 7777\nSecretary Tel: 01865 231313\nSecretary Email: joy.demi@ouh.nhs.uk\nOutcome\nNext clinic visit.\nCopy to patient: Copy.\nCopies to OUH Staff sent internally via Message Centre:\nProfessor Tonia Vincent\nHonorary Consultant Rheumatologist\nProfessor of Musculoskeletal Biology\nCardiology Clinic Letter\n22/Apr/2026 14:02:32\n4 of 4",
+  "icd_codes": [],
+  "medications_raw": [],
+  "snomed": {
+    "problems": [
+      {
+        "text": "spinal fluid leak",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "230744007",
+        "description": "Cerebrospinal fluid leak (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "672db9ab",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "really well",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "20572008",
+        "description": "Good (qualifier value)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "620ceb16",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "thriving nicely",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "1148601009",
+        "description": "Able to thrive (finding)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "4356f326",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "cardiac symptoms",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "267037003",
+        "description": "Cardiovascular symptoms (finding)",
+        "confidence": 0.9350614547729492,
+        "entity_id": "579fd21a",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "regular, good volume pulses",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "12146004",
+        "description": "Normal pulse (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "0ee9392c",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "synchronous femorals",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "428968002",
+        "description": "Unequal femoral pulses (finding)",
+        "confidence": 0.7613970637321472,
+        "entity_id": "6d50d36f",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "normal heart sounds",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "301132007",
+        "description": "Heart sounds normal (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "0c22ce00",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "murmur",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "88610006",
+        "description": "Heart murmur (finding)",
+        "confidence": 0.90631103515625,
+        "entity_id": "270ae245",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "chambers looked balanced",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "78933003",
+        "description": "Balanced (qualifier value)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "d2746988",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "good biventricular function",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "1148838007",
+        "description": "Normal cardiac function (finding)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "c0a17177",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "valve\npathology",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "368009",
+        "description": "Heart valve disorder (disorder)",
+        "confidence": 0.7950295805931091,
+        "entity_id": "a023889f",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "dilated",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "26660001",
+        "description": "Dilatation of aorta (disorder)",
+        "confidence": 0.821601390838623,
+        "entity_id": "014a14bd",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "aortic arch was\nunobstructed",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "253697000",
+        "description": "Isolation of branch of aortic arch (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "83b3534d",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "intracardiac shunt",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "442119001",
+        "description": "Cardiac shunt (finding)",
+        "confidence": 0.7613970637321472,
+        "entity_id": "ab6c5165",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "heart looks normal",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "412746008",
+        "description": "Radionuclide heart study normal (finding)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "f8035c69",
+        "source": "comprehend_medical"
+      }
+    ],
+    "medications": [],
+    "diagnoses": [
+      {
+        "text": "Loeys-Dietz Syndrome",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "446263001",
+        "description": "Loeys-Dietz syndrome (disorder)",
+        "confidence": 0.8617406487464905,
+        "entity_id": "2eb68566",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "inherited aortopathy",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "59877000",
+        "description": "Congenital anomaly of aorta (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "275f071e",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "mutation in TGF-beta receptor 2",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "55446002",
+        "description": "Genetic mutation (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "60c62792",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Marfan's syndrome",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "19346006",
+        "description": "Marfan's syndrome (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "a06a9cb3",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Loeys-Dietz Syndrome",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "446263001",
+        "description": "Loeys-Dietz syndrome (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "b8dbf56c",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "mutation",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "55446002",
+        "description": "Genetic mutation (finding)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "29cf2e38",
+        "source": "comprehend_medical"
+      }
+    ],
+    "all_entities": [
+      {
+        "Id": 4,
+        "Text": "TGF-beta receptor 2 mutation",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 465,
+        "EndOffset": 493,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.6768204569816589
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Tumor growth factor-beta assay (procedure)",
+            "Code": "28665001",
+            "Score": 0.004832271486520767
+          },
+          {
+            "Description": "Genetic mutation (finding)",
+            "Code": "55446002",
+            "Score": 0.0046308524906635284
+          },
+          {
+            "Description": "Insulin-like growth factor binding protein 2 measurement (procedure)",
+            "Code": "121273007",
+            "Score": 0.0037484802305698395
+          },
+          {
+            "Description": "Tumor necrosis factor, beta assay (procedure)",
+            "Code": "45244006",
+            "Score": 0.002702598460018635
+          },
+          {
+            "Description": "Insulin-like growth factor-II measurement (procedure)",
+            "Code": "104937003",
+            "Score": 0.002508760429918766
+          }
+        ]
+      },
+      {
+        "Id": 5,
+        "Text": "Loeys-Dietz Syndrome",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.8617406487464905,
+        "BeginOffset": 512,
+        "EndOffset": 532,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PERTAINS_TO_FAMILY",
+            "Score": 0.9013108015060425
+          },
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.779019296169281
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Loeys-Dietz syndrome (disorder)",
+            "Code": "446263001",
+            "Score": 0.23093940317630768
+          },
+          {
+            "Description": "Lofgrens syndrome (disorder)",
+            "Code": "238676008",
+            "Score": 0.03026571124792099
+          },
+          {
+            "Description": "Family history of gene mutation (situation)",
+            "Code": "138701000119105",
+            "Score": 0.021147528663277626
+          },
+          {
+            "Description": "Fetal misoprostol syndrome (disorder)",
+            "Code": "254252005",
+            "Score": 0.021113678812980652
+          },
+          {
+            "Description": "Aortic aneurysm due to Loeys-Dietz syndrome (disorder)",
+            "Code": "838364007",
+            "Score": 0.01689145900309086
+          }
+        ]
+      },
+      {
+        "Id": 6,
+        "Text": "Weight",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.877546489238739,
+        "BeginOffset": 548,
+        "EndOffset": 554,
+        "Attributes": [
+          {
+            "Category": "TEST_TREATMENT_PROCEDURE",
+            "Type": "TEST_VALUE",
+            "Score": 0.877546489238739,
+            "RelationshipScore": 0.8813977241516113,
+            "RelationshipType": "TEST_VALUE",
+            "Id": 7,
+            "BeginOffset": 555,
+            "EndOffset": 561,
+            "Text": "16.2kg",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "kilogram (qualifier value)",
+                "Code": "258683005",
+                "Score": 0.0015350189059972763
+              },
+              {
+                "Description": "Gram.meter (qualifier value)",
+                "Code": "277384007",
+                "Score": 0.000576410093344748
+              },
+              {
+                "Description": "Millimeter (qualifier value)",
+                "Code": "258673006",
+                "Score": 0.0005417517968453467
+              },
+              {
+                "Description": "Family history of tall stature (situation)",
+                "Code": "452621000124109",
+                "Score": 0.0005417249631136656
+              },
+              {
+                "Description": "Gram/kilogram body weight (qualifier value)",
+                "Code": "228919004",
+                "Score": 0.0005241385078988969
+              }
+            ]
+          }
+        ],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Body weight (observable entity)",
+            "Code": "27113001",
+            "Score": 0.29597336053848267
+          },
+          {
+            "Description": "Weight of organ (observable entity)",
+            "Code": "1157294009",
+            "Score": 0.05148567631840706
+          },
+          {
+            "Description": "Birth weight (observable entity)",
+            "Code": "364589006",
+            "Score": 0.050707753747701645
+          },
+          {
+            "Description": "Weight finding (finding)",
+            "Code": "107647005",
+            "Score": 0.046588364988565445
+          },
+          {
+            "Description": "Weight (property) (qualifier value)",
+            "Code": "726527001",
+            "Score": 0.04344293475151062
+          }
+        ]
+      },
+      {
+        "Id": 8,
+        "Text": "height",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.877546489238739,
+        "BeginOffset": 563,
+        "EndOffset": 569,
+        "Attributes": [
+          {
+            "Category": "TEST_TREATMENT_PROCEDURE",
+            "Type": "TEST_VALUE",
+            "Score": 0.877546489238739,
+            "RelationshipScore": 0.8813977241516113,
+            "RelationshipType": "TEST_VALUE",
+            "Id": 9,
+            "BeginOffset": 570,
+            "EndOffset": 574,
+            "Text": "95cm",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Measuring height of patient (procedure)",
+                "Code": "14456009",
+                "Score": 0.002051430521532893
+              },
+              {
+                "Description": "Centimeter (qualifier value)",
+                "Code": "258672001",
+                "Score": 0.0019420828903093934
+              },
+              {
+                "Description": "Decimeter (qualifier value)",
+                "Code": "258671008",
+                "Score": 0.0011744536459445953
+              },
+              {
+                "Description": "Body height (observable entity)",
+                "Code": "1153637007",
+                "Score": 0.001031790510751307
+              },
+              {
+                "Description": "Body height measure (observable entity)",
+                "Code": "50373000",
+                "Score": 0.000995909096673131
+              }
+            ]
+          }
+        ],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Body height measure (observable entity)",
+            "Code": "50373000",
+            "Score": 0.23980455100536346
+          },
+          {
+            "Description": "Body height (observable entity)",
+            "Code": "1153637007",
+            "Score": 0.18796564638614655
+          },
+          {
+            "Description": "Measuring height of patient (procedure)",
+            "Code": "14456009",
+            "Score": 0.1530110090970993
+          },
+          {
+            "Description": "Body height growth rate (observable entity)",
+            "Code": "870593000",
+            "Score": 0.08478979021310806
+          },
+          {
+            "Description": "Patient-height measure (physical object)",
+            "Code": "462588003",
+            "Score": 0.07976017892360687
+          }
+        ]
+      },
+      {
+        "Id": 10,
+        "Text": "cardiac",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 641,
+        "EndOffset": 648,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Heart structure (body structure)",
+            "Code": "80891009",
+            "Score": 0.3477638065814972
+          },
+          {
+            "Description": "Cardiac assessment (procedure)",
+            "Code": "425315000",
+            "Score": 0.024032337591052055
+          },
+          {
+            "Description": "Cardiac approach (qualifier value)",
+            "Code": "311995003",
+            "Score": 0.019990159198641777
+          },
+          {
+            "Description": "Structure of cardiovascular system (body structure)",
+            "Code": "113257007",
+            "Score": 0.016858549788594246
+          },
+          {
+            "Description": "Entire heart (body structure)",
+            "Code": "302509004",
+            "Score": 0.016581105068325996
+          }
+        ]
+      },
+      {
+        "Id": 11,
+        "Text": "cardiac assessment",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 641,
+        "EndOffset": 659,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cardiac assessment (procedure)",
+            "Code": "425315000",
+            "Score": 0.3428972363471985
+          },
+          {
+            "Description": "Initial cardiac assessment (regime/therapy)",
+            "Code": "170571002",
+            "Score": 0.10415368527173996
+          },
+          {
+            "Description": "Cardiac care assessment (procedure)",
+            "Code": "385714005",
+            "Score": 0.09430299699306488
+          },
+          {
+            "Description": "Examination of heart (procedure)",
+            "Code": "284448002",
+            "Score": 0.07605604827404022
+          },
+          {
+            "Description": "Follow-up cardiac assessment (regime/therapy)",
+            "Code": "170572009",
+            "Score": 0.06426265835762024
+          }
+        ]
+      },
+      {
+        "Id": 12,
+        "Text": "inherited aortopathy",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 689,
+        "EndOffset": 709,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Congenital anomaly of aorta (disorder)",
+            "Code": "59877000",
+            "Score": 0.0905766710639
+          },
+          {
+            "Description": "Congenital abnormality of ascending aorta (disorder)",
+            "Code": "448471006",
+            "Score": 0.07047733664512634
+          },
+          {
+            "Description": "Congenital malposition of aorta (disorder)",
+            "Code": "93305002",
+            "Score": 0.07038342207670212
+          },
+          {
+            "Description": "Congenital abnormalities of thoracic aortic branches (disorder)",
+            "Code": "253693001",
+            "Score": 0.06738085299730301
+          },
+          {
+            "Description": "Congenital duplication of aorta (disorder)",
+            "Code": "93064005",
+            "Score": 0.0646740272641182
+          }
+        ]
+      },
+      {
+        "Id": 13,
+        "Text": "mutation in TGF-beta receptor 2",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 780,
+        "EndOffset": 811,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Genetic mutation (finding)",
+            "Code": "55446002",
+            "Score": 0.23531632125377655
+          },
+          {
+            "Description": "Family history of gene mutation (situation)",
+            "Code": "138701000119105",
+            "Score": 0.23131833970546722
+          },
+          {
+            "Description": "Familial multiple factor deficiency syndrome, type II (disorder)",
+            "Code": "65768009",
+            "Score": 0.1792626827955246
+          },
+          {
+            "Description": "No family history of (contextual qualifier) (qualifier value)",
+            "Code": "47009004",
+            "Score": 0.17289289832115173
+          },
+          {
+            "Description": "Family history of hereditary disease carrier state (situation)",
+            "Code": "59551000119100",
+            "Score": 0.1696169227361679
+          }
+        ]
+      },
+      {
+        "Id": 14,
+        "Text": "Marfan's syndrome",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 891,
+        "EndOffset": 908,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "LOW_CONFIDENCE",
+            "Score": 0.5296252369880676
+          },
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Marfan's syndrome (disorder)",
+            "Code": "19346006",
+            "Score": 0.7238298058509827
+          },
+          {
+            "Description": "Marfan syndrome type 1 (disorder)",
+            "Code": "1003407000",
+            "Score": 0.3421240746974945
+          },
+          {
+            "Description": "Family history of Marfan syndrome (situation)",
+            "Code": "64181000119106",
+            "Score": 0.2873551845550537
+          },
+          {
+            "Description": "Neonatal Marfan syndrome (disorder)",
+            "Code": "763839005",
+            "Score": 0.17405572533607483
+          },
+          {
+            "Description": "Marfan's syndrome affecting skin (disorder)",
+            "Code": "234035006",
+            "Score": 0.1609165370464325
+          }
+        ]
+      },
+      {
+        "Id": 15,
+        "Text": "genetics",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 944,
+        "EndOffset": 952,
+        "Attributes": [
+          {
+            "Category": "TEST_TREATMENT_PROCEDURE",
+            "Type": "TEST_VALUE",
+            "Score": 0.7950295805931091,
+            "RelationshipScore": 0.8031880259513855,
+            "RelationshipType": "TEST_VALUE",
+            "Id": 16,
+            "BeginOffset": 958,
+            "EndOffset": 966,
+            "Text": "negative",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Negative (qualifier value)",
+                "Code": "260385009",
+                "Score": 0.48189863562583923
+              },
+              {
+                "Description": "Negative genetic finding (finding)",
+                "Code": "412730000",
+                "Score": 0.4737447500228882
+              },
+              {
+                "Description": "Karyotype evaluation normal (finding)",
+                "Code": "734871004",
+                "Score": 0.09088478237390518
+              },
+              {
+                "Description": "Negative laboratory finding (navigational concept)",
+                "Code": "309300003",
+                "Score": 0.07564079016447067
+              },
+              {
+                "Description": "Hematology finding negative (navigational concept)",
+                "Code": "309304007",
+                "Score": 0.0739547535777092
+              }
+            ]
+          }
+        ],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Genetic test (procedure)",
+            "Code": "405824009",
+            "Score": 0.11433181911706924
+          },
+          {
+            "Description": "Clinical genetics department (environment)",
+            "Code": "309929007",
+            "Score": 0.10650096088647842
+          },
+          {
+            "Description": "Genetics department (environment)",
+            "Code": "309928004",
+            "Score": 0.10516709834337234
+          },
+          {
+            "Description": "Seen by clinical genetics service (finding)",
+            "Code": "305815001",
+            "Score": 0.09875832498073578
+          },
+          {
+            "Description": "Clinical genetics (qualifier value)",
+            "Code": "394580004",
+            "Score": 0.09130801260471344
+          }
+        ]
+      },
+      {
+        "Id": 20,
+        "Text": "spinal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7613970637321472,
+        "BeginOffset": 994,
+        "EndOffset": 1000,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Spinal cord structure (body structure)",
+            "Code": "2748008",
+            "Score": 0.32475385069847107
+          },
+          {
+            "Description": "Structure of vertebral column (body structure)",
+            "Code": "421060004",
+            "Score": 0.04708290100097656
+          },
+          {
+            "Description": "Spinal nerve structure (body structure)",
+            "Code": "3169005",
+            "Score": 0.030662303790450096
+          },
+          {
+            "Description": "Spinal canal structure (body structure)",
+            "Code": "61853006",
+            "Score": 0.02760780230164528
+          },
+          {
+            "Description": "Structure of vertebral column and/or spinal cord (body structure)",
+            "Code": "737561001",
+            "Score": 0.027287954464554787
+          }
+        ]
+      },
+      {
+        "Id": 17,
+        "Text": "spinal fluid",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 994,
+        "EndOffset": 1006,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Structure of spinal cerebrospinal fluid pathway (body structure)",
+            "Code": "280401006",
+            "Score": 0.11049026250839233
+          },
+          {
+            "Description": "Cerebrospinal fluid (substance)",
+            "Code": "65216001",
+            "Score": 0.09636510908603668
+          },
+          {
+            "Description": "Ascitic fluid (substance)",
+            "Code": "409615008",
+            "Score": 0.08066132664680481
+          },
+          {
+            "Description": "Spinal effusion (disorder)",
+            "Code": "298156003",
+            "Score": 0.07525866478681564
+          },
+          {
+            "Description": "Cerebrospinal fluid collection (procedure)",
+            "Code": "231061006",
+            "Score": 0.07503172755241394
+          }
+        ]
+      },
+      {
+        "Id": 18,
+        "Text": "spinal fluid leak",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 994,
+        "EndOffset": 1011,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7613970637321472,
+            "RelationshipScore": 0.7552722692489624,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 20,
+            "BeginOffset": 994,
+            "EndOffset": 1000,
+            "Text": "spinal",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Spinal cord structure (body structure)",
+                "Code": "2748008",
+                "Score": 0.32475385069847107
+              },
+              {
+                "Description": "Structure of vertebral column (body structure)",
+                "Code": "421060004",
+                "Score": 0.04708290100097656
+              },
+              {
+                "Description": "Spinal nerve structure (body structure)",
+                "Code": "3169005",
+                "Score": 0.030662303790450096
+              },
+              {
+                "Description": "Spinal canal structure (body structure)",
+                "Code": "61853006",
+                "Score": 0.02760780230164528
+              },
+              {
+                "Description": "Structure of vertebral column and/or spinal cord (body structure)",
+                "Code": "737561001",
+                "Score": 0.027287954464554787
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7172441482543945,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 17,
+            "BeginOffset": 994,
+            "EndOffset": 1006,
+            "Text": "spinal fluid",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Structure of spinal cerebrospinal fluid pathway (body structure)",
+                "Code": "280401006",
+                "Score": 0.11049026250839233
+              },
+              {
+                "Description": "Cerebrospinal fluid (substance)",
+                "Code": "65216001",
+                "Score": 0.09636510908603668
+              },
+              {
+                "Description": "Ascitic fluid (substance)",
+                "Code": "409615008",
+                "Score": 0.08066132664680481
+              },
+              {
+                "Description": "Spinal effusion (disorder)",
+                "Code": "298156003",
+                "Score": 0.07525866478681564
+              },
+              {
+                "Description": "Cerebrospinal fluid collection (procedure)",
+                "Code": "231061006",
+                "Score": 0.07503172755241394
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "SIGN",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cerebrospinal fluid leak (disorder)",
+            "Code": "230744007",
+            "Score": 0.1936698704957962
+          },
+          {
+            "Description": "Cerebrospinal fluid leak from spinal puncture (disorder)",
+            "Code": "193064009",
+            "Score": 0.1393190622329712
+          },
+          {
+            "Description": "Cerebrospinal fluid leakage (morphologic abnormality)",
+            "Code": "73965003",
+            "Score": 0.11578524857759476
+          },
+          {
+            "Description": "Closure of cerebrospinal fluid leak from spinal cord (procedure)",
+            "Code": "699242009",
+            "Score": 0.07136081159114838
+          },
+          {
+            "Description": "Sample leaked (finding)",
+            "Code": "281263003",
+            "Score": 0.07046984136104584
+          }
+        ]
+      },
+      {
+        "Id": 19,
+        "Text": "full genome sequencing",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 1020,
+        "EndOffset": 1042,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Whole genome sequencing (procedure)",
+            "Code": "461571000124105",
+            "Score": 0.23585145175457
+          },
+          {
+            "Description": "Sequencing of entire coding region of gene (procedure)",
+            "Code": "443968007",
+            "Score": 0.02783048525452614
+          },
+          {
+            "Description": "Nucleic acid sequencing (procedure)",
+            "Code": "117040002",
+            "Score": 0.021073192358016968
+          },
+          {
+            "Description": "Sequencing of exon of gene (procedure)",
+            "Code": "444124004",
+            "Score": 0.017901644110679626
+          },
+          {
+            "Description": "Human genome (substance)",
+            "Code": "50470001",
+            "Score": 0.009558459743857384
+          }
+        ]
+      },
+      {
+        "Id": 21,
+        "Text": "Loeys-Dietz Syndrome",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 1078,
+        "EndOffset": 1098,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.7299559712409973
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Loeys-Dietz syndrome (disorder)",
+            "Code": "446263001",
+            "Score": 0.520444929599762
+          },
+          {
+            "Description": "Lofgrens syndrome (disorder)",
+            "Code": "238676008",
+            "Score": 0.07263722270727158
+          },
+          {
+            "Description": "Gomez Lopez Hernandez syndrome (disorder)",
+            "Code": "722451006",
+            "Score": 0.06041733920574188
+          },
+          {
+            "Description": "Lobotomy syndrome (disorder)",
+            "Code": "231453009",
+            "Score": 0.05957209691405296
+          },
+          {
+            "Description": "Revesz syndrome (disorder)",
+            "Code": "723512008",
+            "Score": 0.051343344151973724
+          }
+        ]
+      },
+      {
+        "Id": 22,
+        "Text": "mutation",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 1151,
+        "EndOffset": 1159,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PERTAINS_TO_FAMILY",
+            "Score": 0.6768204569816589
+          },
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.6248409748077393
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Genetic mutation (finding)",
+            "Code": "55446002",
+            "Score": 0.10563433170318604
+          },
+          {
+            "Description": "Family history of gene mutation (situation)",
+            "Code": "138701000119105",
+            "Score": 0.03199078142642975
+          },
+          {
+            "Description": "Somatic mutation (finding)",
+            "Code": "124975008",
+            "Score": 0.02184661477804184
+          },
+          {
+            "Description": "Seen by geneticist (finding)",
+            "Code": "305674005",
+            "Score": 0.01902112364768982
+          },
+          {
+            "Description": "Mitochondrial mutation (finding)",
+            "Code": "430934002",
+            "Score": 0.01547485962510109
+          }
+        ]
+      },
+      {
+        "Id": 23,
+        "Text": "really well",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1171,
+        "EndOffset": 1182,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "SIGN",
+            "Score": 0.5752319693565369
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Good (qualifier value)",
+            "Code": "20572008",
+            "Score": 0.058919165283441544
+          },
+          {
+            "Description": "Well adult (finding)",
+            "Code": "102512003",
+            "Score": 0.028511274605989456
+          },
+          {
+            "Description": "Good quality of life (finding)",
+            "Code": "1156447008",
+            "Score": 0.025223448872566223
+          },
+          {
+            "Description": "Well in self (finding)",
+            "Code": "17326005",
+            "Score": 0.025172287598252296
+          },
+          {
+            "Description": "Well cared for appearance (finding)",
+            "Code": "397749000",
+            "Score": 0.02302469126880169
+          }
+        ]
+      },
+      {
+        "Id": 24,
+        "Text": "thriving nicely",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 1187,
+        "EndOffset": 1202,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "SIGN",
+            "Score": 0.7299559712409973
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Able to thrive (finding)",
+            "Code": "1148601009",
+            "Score": 0.06416340172290802
+          },
+          {
+            "Description": "Functional finding (finding)",
+            "Code": "118228005",
+            "Score": 0.03542688861489296
+          },
+          {
+            "Description": "Good quality of life (finding)",
+            "Code": "1156447008",
+            "Score": 0.03361353650689125
+          },
+          {
+            "Description": "Disease condition finding (finding)",
+            "Code": "371314008",
+            "Score": 0.027008172124624252
+          },
+          {
+            "Description": "Behavior positively reinforced (finding)",
+            "Code": "284495003",
+            "Score": 0.026901518926024437
+          }
+        ]
+      },
+      {
+        "Id": 25,
+        "Text": "cardiac",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.8435389995574951,
+        "BeginOffset": 1211,
+        "EndOffset": 1218,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Heart structure (body structure)",
+            "Code": "80891009",
+            "Score": 0.5126211047172546
+          },
+          {
+            "Description": "Structure of cardiovascular system (body structure)",
+            "Code": "113257007",
+            "Score": 0.030782606452703476
+          },
+          {
+            "Description": "Cardiac internal structure (body structure)",
+            "Code": "277712000",
+            "Score": 0.030034031718969345
+          },
+          {
+            "Description": "Structure of heart tissue (body structure)",
+            "Code": "386108004",
+            "Score": 0.02491605468094349
+          },
+          {
+            "Description": "Structure of cardiac vein (body structure)",
+            "Code": "85439003",
+            "Score": 0.01947164535522461
+          }
+        ]
+      },
+      {
+        "Id": 26,
+        "Text": "cardiac symptoms",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.9350614547729492,
+        "BeginOffset": 1211,
+        "EndOffset": 1227,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.8435389995574951,
+            "RelationshipScore": 0.8386837244033813,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 25,
+            "BeginOffset": 1211,
+            "EndOffset": 1218,
+            "Text": "cardiac",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Heart structure (body structure)",
+                "Code": "80891009",
+                "Score": 0.5126211047172546
+              },
+              {
+                "Description": "Structure of cardiovascular system (body structure)",
+                "Code": "113257007",
+                "Score": 0.030782606452703476
+              },
+              {
+                "Description": "Cardiac internal structure (body structure)",
+                "Code": "277712000",
+                "Score": 0.030034031718969345
+              },
+              {
+                "Description": "Structure of heart tissue (body structure)",
+                "Code": "386108004",
+                "Score": 0.02491605468094349
+              },
+              {
+                "Description": "Structure of cardiac vein (body structure)",
+                "Code": "85439003",
+                "Score": 0.01947164535522461
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "NEGATION",
+            "Score": 0.8787732124328613
+          },
+          {
+            "Name": "SYMPTOM",
+            "Score": 0.8203471899032593
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cardiovascular symptoms (finding)",
+            "Code": "267037003",
+            "Score": 0.3145158588886261
+          },
+          {
+            "Description": "Cardiac finding (finding)",
+            "Code": "301095005",
+            "Score": 0.16056299209594727
+          },
+          {
+            "Description": "Multiple symptoms (finding)",
+            "Code": "38276004",
+            "Score": 0.08373455703258514
+          },
+          {
+            "Description": "No cardiovascular symptom (situation)",
+            "Code": "162001003",
+            "Score": 0.05695756897330284
+          },
+          {
+            "Description": "Cardiovascular finding (finding)",
+            "Code": "106063007",
+            "Score": 0.053773432970047
+          }
+        ]
+      }
+    ],
+    "used_fallback": false,
+    "top3_fallback": [],
+    "used_summary_fallback": false,
+    "used_doctype_fallback": false
+  },
+  "summaries": {
+    "clinician": {
+      "summary": "Patient alexis, a 21-month-old, was reviewed in the inherited aortopathy clinic. She has inherited a mutation in the TGF-beta receptor 2 gene, which is associated with Loeys-Dietz Syndrome. She is currently asymptomatic with a normal cardiovascular examination. Echocardiography showed a normal-sized aorta (18.7mm at the sinuses) and no valvular or structural cardiac abnormalities. Alexis will continue to be monitored in the paediatric cardiology clinic, with a repeat echocardiogram planned in 1 year's time",
+      "confidence": 0.8
+    },
+    "patient": {
+      "summary": "female patient was assessed for inherited heart and blood vessel conditions. She has inherited a genetic mutation from her mother which can affect the structure of the heart and blood vessels. However, the assessment found that at this stage, the patient's heart looks normal and is working well. The doctor will continue to monitor the patient's progress and will check her heart again in 1 year's time at the next clinic appointment",
+      "confidence": 0.8
+    },
+    "pharmacist": {
+      "summary": "No medications were documented in the provided clinical information. The patient, Alexis, was assessed in the paediatric cardiology clinic and was found to have a mutation in the TGF-beta receptor 2 gene associated with Loeys-Dietz Syndrome. The clinical examination and echocardiogram findings were reassuring, with no evidence of cardiac abnormalities at this stage. The patient was advised to have a follow-up echocardiogram in 1 year's time in the cardiology clinic.",
+      "confidence": 0.8
+    },
+    "follow_up_actions": "1. Attempt full echocardiogram in 1 year's time in the paediatric cardiology clinic. Responsible: Paediatric Cardiology Specialist.\n2. Continue to monitor Alexis's progress. Responsible: Paediatric Cardiology Specialist.\n3. Provide copy of letter to the patient. Responsible: Paediatric Cardiology Specialist.\n4. Copy letter sent internally to Professor Tonia Vincent, Honorary Consultant Rheumatologist and Professor of Musculoskeletal Biology. Responsible: Paediatric Cardiology Specialist.",
+    "gp_actions": "1. Continue monitoring Alexis' progress in the inherited aortopathy clinic, with a further full echocardiogram planned in 1 year.\n2. Ensure regular clinical examinations and monitoring for any new cardiac symptoms.\n3. Advise Alexis' family to be alert for any signs of aortic dilation or other cardiovascular changes and report promptly.\n4. Recommend regular screening for family members who may also carry the TGF-beta receptor 2 mutation.",
+    "llm_confidence": 0.8
+  },
+  "gp_actions": "1. Continue monitoring Alexis' progress in the inherited aortopathy clinic, with a further full echocardiogram planned in 1 year.\n2. Ensure regular clinical examinations and monitoring for any new cardiac symptoms.\n3. Advise Alexis' family to be alert for any signs of aortic dilation or other cardiovascular changes and report promptly.\n4. Recommend regular screening for family members who may also carry the TGF-beta receptor 2 mutation.",
+  "follow_up_actions": "1. Attempt full echocardiogram in 1 year's time in the paediatric cardiology clinic. Responsible: Paediatric Cardiology Specialist.\n2. Continue to monitor Alexis's progress. Responsible: Paediatric Cardiology Specialist.\n3. Provide copy of letter to the patient. Responsible: Paediatric Cardiology Specialist.\n4. Copy letter sent internally to Professor Tonia Vincent, Honorary Consultant Rheumatologist and Professor of Musculoskeletal Biology. Responsible: Paediatric Cardiology Specialist.",
+  "phi_entity_count": 35
+}

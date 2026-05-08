@@ -1,0 +1,1178 @@
+{
+  "doc_id": "97bdc9b4",
+  "filename": "97bdc9b4_20260427172609_Redacted.pdf",
+  "processed_at": "2026-05-08T11:37:45.620997",
+  "status": "processed",
+  "pipeline_stages": {
+    "tier0": {
+      "status": "done",
+      "note": "document_handler: 3 page(s) from .PDF | OpenCV preprocessing: applied"
+    },
+    "tier1": {
+      "status": "done",
+      "confidence": 0.972,
+      "pages": 3,
+      "chars_extracted": 2542
+    },
+    "tier2": {
+      "status": "skipped",
+      "note": "Textract confidence >= 90% \u2014 direct to Track A/B (SRS \u00a77 step 2)"
+    },
+    "track_a": {
+      "status": "done",
+      "entities_found": 40,
+      "confidence": 0.666
+    },
+    "hipaa": {
+      "status": "done",
+      "phi_entities_detected": 30,
+      "note": "PHI detection via hipaa_compliance.detect_phi_entities()"
+    },
+    "track_b": {
+      "status": "done",
+      "confidence": 0.8,
+      "letter_type": "Ophthalmology Letter"
+    }
+  },
+  "requires_review": false,
+  "pages_processed": 3,
+  "preview_pages": [
+    "/pages/97bdc9b4/orig_01.png",
+    "/pages/97bdc9b4/orig_02.png",
+    "/pages/97bdc9b4/orig_03.png"
+  ],
+  "preview_image": "/pages/97bdc9b4/orig_01.png",
+  "unified_confidence": 0.842,
+  "confidence_threshold": 0.7,
+  "letter_type": "Ophthalmology Letter",
+  "hospital_trust": "Royal Berkshire Hospital NHS Foundation Trust",
+  "is_sensitive": false,
+  "patient_info": {
+    "name": "Not available",
+    "nhs_number": "Not available",
+    "dob": "Not available",
+    "sex": "Female",
+    "address": "",
+    "hospital_number": "",
+    "gp_practice": "",
+    "pathways_urgency": "",
+    "presenting_complaint": "",
+    "gravida_parity": "",
+    "edd": "",
+    "gestational_age": ""
+  },
+  "structured": {
+    "admission_date": "",
+    "discharge_date": "",
+    "appointment_date": "",
+    "consultant": "Flossmann",
+    "department": "",
+    "hospital": "",
+    "gp_actions": "",
+    "diagnosis_text": "No ranking:",
+    "admission_method": "",
+    "discharge_method": "",
+    "procedure": "",
+    "indication": "",
+    "impression": ""
+  },
+  "clinical_specifics": {
+    "ophthalmic_diagnosis": "No ranking:",
+    "ophthalmic_plan": "and Requested Actions:"
+  },
+  "extracted_text": "Royal Berkshire\nNHS\nDISCHARGE SUMMARY:\n27 APR\nNHS Foundation Trust\n398 A\nGP Telephone: 01344 457535\nDr: Suresh , Chitra\nEASTHAMPSTEAD SURGERY\n23 RECTORY LANE\nEASTHAMPSTEAD\nBRACKNELL\nRG12 7BB\n-\n(1.37.23 b1\nPatient Demographics\nName:\nNHS Number:\nDate of\nOther Identifier (MRN): 16c2270\nGender: Fomale\nHome Telephone:\nAddress: 3 BLACK\nMobile Telephone:\nMEADOWS,BRACKNELL,RG127PP\nAdmission Details\n-\nDischar\nDate: 23/04/2026 14:40:42\nDate: 23/04/2026 15:45:00\nSource: Usual Place of Residence\nDestination: Usual Place of Residence\nConsultant: Flossmann, Oliver\nLead Consultant Speciality: Nephrology\nDischarged by: Moncada 1 Cecille Mae\nWard: Renal CAPD\nOutcome: Discharged with Consent\nSummary\n:\nDiagnosis:\nNo ranking:\n23-Apr-2026 (3029760016) : Anaemia in chronic kidney disease (Confirmed) - Presented\nOn: 23-Apr-2026\n\nProcedures:\nNone\nClinical Summary:\nPatient came in for IV iron infusion.\nObservations taken and recorded.\nCannulation done on her right arm.\nBloods taken including all clinic bloods.\nNo reactions during and 30 minutes post infusion.\nPlan and Requested Actions:\nAdvised to repeat bloods 4 weeks after\ntransfusion.\nBlood form given.\nCannula removed before going home.\nSafety Alerts:\n10/08/2024 - Has ReSPECT (Recommended Summary Plan for Emergency Care and Treatment) (Confirmed)\n07/08/2024 - DNAR - Do not attempt resuscitation (Confirmed)\n16/11/2020 - Coronavirus contact (Confirmed) - Presented On: 15/11/2020\nPast Medical History:\n07/08/2024 - Chronic renal failure (Confirmed) - Presented On: 07/08/2024\n31/10/2022 - Frailty (Possible)\n15/04/2021 - Congestive heart failure (Confirmed)\n20/08/2020 - Hypertension (Confirmed)\n10/08/2020 - Diabetes mellitus (Confirmed)\nMedications and Medical Devices\nAllergies: Angiotensin-converting enzyme inhibitor agent - not known; amlodipine - swelling of both feet;\nmirtazapine - agitated, drowsy, unsteady on feet.\nMeasured Weight: 62.7 kg (Measured cn 23/04/26)\nHeight: No measured or estimated height recorded\n\nBSA: No measured or estimated BSA recorded\nNo relevant medication details\nPrescriber: Smartcard ID: Contact Number:\nPharmacy Use Only\nScreened by:\nDispensed by:\nChecked by:\nAdditional Pharmacy Information\nMDS :\nCommunity Pharmacy :\nPatient Comments :\nPharmacist Contact : 0118 322 5111 bleep\nTitlo : Medicines Helpline\nIf you have any question about your medications after you have left hospital, our pharmacists are able to help\nyou. This service is free and confidential. Contact 0118 322 7642, email:\nmedicines.information@royalberk.shire.nhs.uk\nAKI Warning Stage:-",
+  "icd_codes": [],
+  "medications_raw": [],
+  "snomed": {
+    "problems": [
+      {
+        "text": "reactions",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "281647001",
+        "description": "Adverse reaction (disorder)",
+        "confidence": 0.7613970637321472,
+        "entity_id": "00e2f562",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "swelling of both feet",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "762917000",
+        "description": "Swelling of bilateral feet (finding)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "44ff5655",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "agitated",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "24199005",
+        "description": "Feeling agitated (finding)",
+        "confidence": 0.9350614547729492,
+        "entity_id": "fcf5dace",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "drowsy",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "271782001",
+        "description": "Drowsy (finding)",
+        "confidence": 0.9350614547729492,
+        "entity_id": "cd7451f8",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "unsteady on feet",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "22631008",
+        "description": "Unsteady when walking (finding)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "9ec499b4",
+        "source": "comprehend_medical"
+      }
+    ],
+    "medications": [],
+    "diagnoses": [
+      {
+        "text": "Renal CAPD",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "72333003",
+        "description": "Structure of capillary of kidney (body structure)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "0c633b17",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Anaemia in chronic kidney disease",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "707323002",
+        "description": "Anemia co-occurrent and due to chronic kidney disease (disorder)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "df586e83",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Coronavirus contact",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "186747009",
+        "description": "Coronavirus infection (disorder)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "cc8c698a",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Chronic renal failure",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "90688005",
+        "description": "Chronic renal failure syndrome (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "7d95790d",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Frailty",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "248279007",
+        "description": "Frailty (finding)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "f2680145",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Congestive heart failure",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "42343007",
+        "description": "Congestive heart failure (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "6cb1adf6",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Hypertension",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "38341003",
+        "description": "Hypertensive disorder, systemic arterial (disorder)",
+        "confidence": 0.8435389995574951,
+        "entity_id": "3ecb3928",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Diabetes mellitus",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "73211009",
+        "description": "Diabetes mellitus (disorder)",
+        "confidence": 0.7613970637321472,
+        "entity_id": "0ded4cdf",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "AKI",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "14669001",
+        "description": "Acute renal failure syndrome (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "77c14b80",
+        "source": "comprehend_medical"
+      }
+    ],
+    "all_entities": [
+      {
+        "Id": 5,
+        "Text": "Renal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 639,
+        "EndOffset": 644,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Kidney structure (body structure)",
+            "Code": "64033007",
+            "Score": 0.32567548751831055
+          },
+          {
+            "Description": "Both kidneys (body structure)",
+            "Code": "17373004",
+            "Score": 0.0173448845744133
+          },
+          {
+            "Description": "Entire kidney (body structure)",
+            "Code": "181414000",
+            "Score": 0.014936697669327259
+          },
+          {
+            "Description": "Renal corpuscle structure (body structure)",
+            "Code": "38060002",
+            "Score": 0.014171353541314602
+          },
+          {
+            "Description": "Metanephric structure (body structure)",
+            "Code": "18345004",
+            "Score": 0.01240629330277443
+          }
+        ]
+      },
+      {
+        "Id": 6,
+        "Text": "Renal CAPD",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 639,
+        "EndOffset": 649,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Structure of capillary of kidney (body structure)",
+            "Code": "72333003",
+            "Score": 0.00016785316984169185
+          },
+          {
+            "Description": "Kidney disease (disorder)",
+            "Code": "90708001",
+            "Score": 7.977367204148322e-05
+          },
+          {
+            "Description": "End-stage renal disease (disorder)",
+            "Code": "46177005",
+            "Score": 6.748777377652004e-05
+          },
+          {
+            "Description": "Renal disorders in systemic disease (disorder)",
+            "Code": "236498004",
+            "Score": 6.527220830321312e-05
+          },
+          {
+            "Description": "Entire capillary of kidney (body structure)",
+            "Code": "275409003",
+            "Score": 6.440337892854586e-05
+          }
+        ]
+      },
+      {
+        "Id": 9,
+        "Text": "Anaemia in chronic kidney disease",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 743,
+        "EndOffset": 776,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7950295805931091,
+            "RelationshipScore": 0.8219892978668213,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 10,
+            "BeginOffset": 762,
+            "EndOffset": 768,
+            "Text": "kidney",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Kidney structure (body structure)",
+                "Code": "64033007",
+                "Score": 0.08894788473844528
+              },
+              {
+                "Description": "Both kidneys (body structure)",
+                "Code": "17373004",
+                "Score": 0.0014101651031523943
+              },
+              {
+                "Description": "Left kidney structure (body structure)",
+                "Code": "18639004",
+                "Score": 0.00029611855279654264
+              },
+              {
+                "Description": "Structure of half of kidney (body structure)",
+                "Code": "372185006",
+                "Score": 0.0002705336082726717
+              },
+              {
+                "Description": "Right kidney structure (body structure)",
+                "Code": "9846003",
+                "Score": 0.00024072936503216624
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.5752319693565369
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Anemia co-occurrent and due to chronic kidney disease (disorder)",
+            "Code": "707323002",
+            "Score": 0.18142688274383545
+          },
+          {
+            "Description": "Chronic kidney disease (disorder)",
+            "Code": "709044004",
+            "Score": 0.10421349853277206
+          },
+          {
+            "Description": "Anemia co-occurrent and due to chronic kidney disease stage 3 (disorder)",
+            "Code": "691421000119108",
+            "Score": 0.09401050955057144
+          },
+          {
+            "Description": "Anemia co-occurrent and due to chronic kidney disease stage 5 (disorder)",
+            "Code": "691411000119101",
+            "Score": 0.0877871960401535
+          },
+          {
+            "Description": "Anemia due to chronic kidney disease stage 1 (disorder)",
+            "Code": "691381000119104",
+            "Score": 0.08285200595855713
+          }
+        ]
+      },
+      {
+        "Id": 10,
+        "Text": "kidney",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 762,
+        "EndOffset": 768,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Kidney structure (body structure)",
+            "Code": "64033007",
+            "Score": 0.08894788473844528
+          },
+          {
+            "Description": "Both kidneys (body structure)",
+            "Code": "17373004",
+            "Score": 0.0014101651031523943
+          },
+          {
+            "Description": "Left kidney structure (body structure)",
+            "Code": "18639004",
+            "Score": 0.00029611855279654264
+          },
+          {
+            "Description": "Structure of half of kidney (body structure)",
+            "Code": "372185006",
+            "Score": 0.0002705336082726717
+          },
+          {
+            "Description": "Right kidney structure (body structure)",
+            "Code": "9846003",
+            "Score": 0.00024072936503216624
+          }
+        ]
+      },
+      {
+        "Id": 15,
+        "Text": "Cannulation",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 924,
+        "EndOffset": 935,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cannulation (procedure)",
+            "Code": "42825003",
+            "Score": 0.7187208533287048
+          },
+          {
+            "Description": "Site of cannulation (attribute)",
+            "Code": "272739004",
+            "Score": 0.16604004800319672
+          },
+          {
+            "Description": "Intravenous cannulation (procedure)",
+            "Code": "392231009",
+            "Score": 0.12574148178100586
+          },
+          {
+            "Description": "Cannula procedure (procedure)",
+            "Code": "416539003",
+            "Score": 0.12533152103424072
+          },
+          {
+            "Description": "Intraosseous cannulation (procedure)",
+            "Code": "430824005",
+            "Score": 0.12050268054008484
+          }
+        ]
+      },
+      {
+        "Id": 17,
+        "Text": "right arm",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 948,
+        "EndOffset": 957,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Right upper arm structure (body structure)",
+            "Code": "368209003",
+            "Score": 0.1679103970527649
+          },
+          {
+            "Description": "Entire right upper arm (body structure)",
+            "Code": "59126009",
+            "Score": 0.14434805512428284
+          },
+          {
+            "Description": "Structure of right upper limb (body structure)",
+            "Code": "6921000",
+            "Score": 0.12439156323671341
+          },
+          {
+            "Description": "Upper limb structure (body structure)",
+            "Code": "53120007",
+            "Score": 0.0703679546713829
+          },
+          {
+            "Description": "Bone structure of right upper limb (body structure)",
+            "Code": "719459008",
+            "Score": 0.06346513330936432
+          }
+        ]
+      },
+      {
+        "Id": 18,
+        "Text": "Bloods",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 959,
+        "EndOffset": 965,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Blood sample taken (situation)",
+            "Code": "313334002",
+            "Score": 0.058030590415000916
+          },
+          {
+            "Description": "Bloods (ethnic group)",
+            "Code": "32873005",
+            "Score": 0.04634009301662445
+          },
+          {
+            "Description": "Human blood product (product)",
+            "Code": "414419001",
+            "Score": 0.04030369967222214
+          },
+          {
+            "Description": "Blast count, blood (procedure)",
+            "Code": "104102000",
+            "Score": 0.038173094391822815
+          },
+          {
+            "Description": "Blood cell count (procedure)",
+            "Code": "88308000",
+            "Score": 0.036656010895967484
+          }
+        ]
+      },
+      {
+        "Id": 21,
+        "Text": "bloods",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 993,
+        "EndOffset": 999,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Blood cell count (procedure)",
+            "Code": "88308000",
+            "Score": 0.04765491187572479
+          },
+          {
+            "Description": "Blood cell (cell)",
+            "Code": "63370004",
+            "Score": 0.01989688351750374
+          },
+          {
+            "Description": "Bloods (ethnic group)",
+            "Code": "32873005",
+            "Score": 0.015641726553440094
+          },
+          {
+            "Description": "Myelocyte count, blood (procedure)",
+            "Code": "104099000",
+            "Score": 0.015529644675552845
+          },
+          {
+            "Description": "Blood cell analysis (procedure)",
+            "Code": "252276003",
+            "Score": 0.015393243171274662
+          }
+        ]
+      },
+      {
+        "Id": 19,
+        "Text": "reactions",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7613970637321472,
+        "BeginOffset": 1004,
+        "EndOffset": 1013,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "NEGATION",
+            "Score": 0.8203471899032593
+          },
+          {
+            "Name": "SIGN",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Adverse reaction (disorder)",
+            "Code": "281647001",
+            "Score": 0.4041050374507904
+          },
+          {
+            "Description": "Reaction (qualifier value)",
+            "Code": "263851003",
+            "Score": 0.36972033977508545
+          },
+          {
+            "Description": "Drug reaction (qualifier value)",
+            "Code": "264519003",
+            "Score": 0.27929452061653137
+          },
+          {
+            "Description": "Adverse reaction caused by blood plasma (disorder)",
+            "Code": "218580004",
+            "Score": 0.26545923948287964
+          },
+          {
+            "Description": "Adverse reaction caused by blood or blood product (disorder)",
+            "Code": "419887003",
+            "Score": 0.2525150775909424
+          }
+        ]
+      },
+      {
+        "Id": 22,
+        "Text": "bloods",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TEST_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1097,
+        "EndOffset": 1103,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Blood cell count (procedure)",
+            "Code": "88308000",
+            "Score": 0.006505480967462063
+          },
+          {
+            "Description": "Transfusion of blood product (procedure)",
+            "Code": "116859006",
+            "Score": 0.0046647354029119015
+          },
+          {
+            "Description": "Blast count, blood (procedure)",
+            "Code": "104102000",
+            "Score": 0.0045766266994178295
+          },
+          {
+            "Description": "Blood product (product)",
+            "Code": "410652009",
+            "Score": 0.003742615692317486
+          },
+          {
+            "Description": "Blood plasma (product)",
+            "Code": "419185008",
+            "Score": 0.0034944587387144566
+          }
+        ]
+      },
+      {
+        "Id": 24,
+        "Text": "transfusion",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TREATMENT_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1118,
+        "EndOffset": 1129,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Transfusion (procedure)",
+            "Code": "5447007",
+            "Score": 0.48236626386642456
+          },
+          {
+            "Description": "Transfusion of blood product (procedure)",
+            "Code": "116859006",
+            "Score": 0.2619034945964813
+          },
+          {
+            "Description": "Transfusion of plasma (procedure)",
+            "Code": "13569004",
+            "Score": 0.19059038162231445
+          },
+          {
+            "Description": "Transfusion - action (qualifier value)",
+            "Code": "303955003",
+            "Score": 0.1340356469154358
+          },
+          {
+            "Description": "Transfusion of red blood cells (procedure)",
+            "Code": "116863004",
+            "Score": 0.12162745743989944
+          }
+        ]
+      },
+      {
+        "Id": 25,
+        "Text": "Cannula removed",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1149,
+        "EndOffset": 1164,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Vascular cannula removal (procedure)",
+            "Code": "233553003",
+            "Score": 0.5547512769699097
+          },
+          {
+            "Description": "Removal of intravenous cannula (procedure)",
+            "Code": "225066003",
+            "Score": 0.5454464554786682
+          },
+          {
+            "Description": "Cannula procedure (procedure)",
+            "Code": "416539003",
+            "Score": 0.4027233421802521
+          },
+          {
+            "Description": "Procedure discontinued by patient (situation)",
+            "Code": "713247000",
+            "Score": 0.2369670271873474
+          },
+          {
+            "Description": "Removed from waiting list (finding)",
+            "Code": "183671000",
+            "Score": 0.22685521841049194
+          }
+        ]
+      },
+      {
+        "Id": 28,
+        "Text": "DNAR",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1309,
+        "EndOffset": 1313,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Nucleic acid sequencing (procedure)",
+            "Code": "117040002",
+            "Score": 3.3530594123476476e-07
+          },
+          {
+            "Description": "Genetic test (procedure)",
+            "Code": "405824009",
+            "Score": 1.367988318179414e-07
+          },
+          {
+            "Description": "Nucleic acid amplification (procedure)",
+            "Code": "69363007",
+            "Score": 1.352785830022185e-07
+          },
+          {
+            "Description": "Nucleic acid assay (procedure)",
+            "Code": "398545005",
+            "Score": 1.3409507459982706e-07
+          },
+          {
+            "Description": "Polymerase chain reaction analysis (procedure)",
+            "Code": "9718006",
+            "Score": 1.294049383204765e-07
+          }
+        ]
+      },
+      {
+        "Id": 29,
+        "Text": "resuscitation",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "TREATMENT_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1331,
+        "EndOffset": 1344,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "NEGATION",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Resuscitation (procedure)",
+            "Code": "439569004",
+            "Score": 0.7392592430114746
+          },
+          {
+            "Description": "Not for resuscitation (finding)",
+            "Code": "304253006",
+            "Score": 0.399943470954895
+          },
+          {
+            "Description": "Cardiac resuscitation (procedure)",
+            "Code": "69779005",
+            "Score": 0.2924026548862457
+          },
+          {
+            "Description": "For resuscitation (finding)",
+            "Code": "304252001",
+            "Score": 0.27226710319519043
+          },
+          {
+            "Description": "Resuscitation status (observable entity)",
+            "Code": "304251008",
+            "Score": 0.2249041646718979
+          }
+        ]
+      },
+      {
+        "Id": 31,
+        "Text": "Coronavirus contact",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1370,
+        "EndOffset": 1389,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Coronavirus infection (disorder)",
+            "Code": "186747009",
+            "Score": 0.1920955330133438
+          },
+          {
+            "Description": "Exposure to coronavirus infection (event)",
+            "Code": "702547000",
+            "Score": 0.17678536474704742
+          },
+          {
+            "Description": "Human coronavirus (organism)",
+            "Code": "84101006",
+            "Score": 0.0760715901851654
+          },
+          {
+            "Description": "Suspected coronavirus infection (situation)",
+            "Code": "700217006",
+            "Score": 0.07553629577159882
+          },
+          {
+            "Description": "Physical contact (physical force)",
+            "Code": "76933008",
+            "Score": 0.055802032351493835
+          }
+        ]
+      },
+      {
+        "Id": 34,
+        "Text": "Chronic renal failure",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 1464,
+        "EndOffset": 1485,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7172441482543945,
+            "RelationshipScore": 0.7223333120346069,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 35,
+            "BeginOffset": 1472,
+            "EndOffset": 1477,
+            "Text": "renal",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Kidney structure (body structure)",
+                "Code": "64033007",
+                "Score": 0.11649911105632782
+              },
+              {
+                "Description": "Both kidneys (body structure)",
+                "Code": "17373004",
+                "Score": 0.012486753985285759
+              },
+              {
+                "Description": "Entire kidney (body structure)",
+                "Code": "181414000",
+                "Score": 0.0047057922929525375
+              },
+              {
+                "Description": "Left kidney structure (body structure)",
+                "Code": "18639004",
+                "Score": 0.0038830891717225313
+              },
+              {
+                "Description": "Kidney part (body structure)",
+                "Code": "119219003",
+                "Score": 0.002814887324348092
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.6768204569816589
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Chronic renal failure syndrome (disorder)",
+            "Code": "90688005",
+            "Score": 0.2341042011976242
+          },
+          {
+            "Description": "Chronic kidney disease (disorder)",
+            "Code": "709044004",
+            "Score": 0.1969963163137436
+          },
+          {
+            "Description": "Chronic progressive renal failure (disorder)",
+            "Code": "425369003",
+            "Score": 0.11628607660531998
+          },
+          {
+            "Description": "Chronic failure (finding)",
+            "Code": "32979008",
+            "Score": 0.06621640175580978
+          },
+          {
+            "Description": "Acute-on-chronic renal failure (disorder)",
+            "Code": "236433006",
+            "Score": 0.06339306384325027
+          }
+        ]
+      },
+      {
+        "Id": 35,
+        "Text": "renal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 1472,
+        "EndOffset": 1477,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Kidney structure (body structure)",
+            "Code": "64033007",
+            "Score": 0.11649911105632782
+          },
+          {
+            "Description": "Both kidneys (body structure)",
+            "Code": "17373004",
+            "Score": 0.012486753985285759
+          },
+          {
+            "Description": "Entire kidney (body structure)",
+            "Code": "181414000",
+            "Score": 0.0047057922929525375
+          },
+          {
+            "Description": "Left kidney structure (body structure)",
+            "Code": "18639004",
+            "Score": 0.0038830891717225313
+          },
+          {
+            "Description": "Kidney part (body structure)",
+            "Code": "119219003",
+            "Score": 0.002814887324348092
+          }
+        ]
+      },
+      {
+        "Id": 38,
+        "Text": "Frailty",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 1538,
+        "EndOffset": 1545,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "LOW_CONFIDENCE",
+            "Score": 0.6768204569816589
+          },
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.6248409748077393
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Frailty (finding)",
+            "Code": "248279007",
+            "Score": 0.663885235786438
+          },
+          {
+            "Description": "Frail elderly (finding)",
+            "Code": "404904002",
+            "Score": 0.171456977725029
+          },
+          {
+            "Description": "Frailty Index (assessment scale)",
+            "Code": "713634000",
+            "Score": 0.04717489704489708
+          },
+          {
+            "Description": "Frail elderly assessment (procedure)",
+            "Code": "134427001",
+            "Score": 0.03325492516160011
+          },
+          {
+            "Description": "Senile asthenia (finding)",
+            "Code": "18726006",
+            "Score": 0.02495463751256466
+          }
+        ]
+      },
+      {
+        "Id": 40,
+        "Text": "Congestive heart failure",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 1570,
+        "EndOffset": 1594,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.8617406487464905,
+            "RelationshipScore": 0.8672217726707458,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 41,
+            "BeginOffset": 1581,
+            "EndOffset": 1586,
+            "Text": "heart",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Heart structure (body structure)",
+                "Code": "80891009",
+                "Score": 0.14154958724975586
+              },
+              {
+                "Description": "Congestive heart failure (disorder)",
+                "Code": "42343007",
+                "Score": 0.0036670209374278784
+              },
+              {
+                "Description": "Structure of heart tissue (body structure)",
+                "Code": "386108004",
+                "Score": 0.0020036001224070787
+              },
+              {
+                "Description": "Congestive heart failure clinic (environment)",
+                "Code": "702843005",
+                "Score": 0.0016127449925988913
+              },
+              {
+                "Description": "Structure of cardiovascular system (body structure)",
+                "Code": "113257007",
+                "Score": 0.0012813610956072807
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.7299559712409973
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Congestive heart failure (disorder)",
+            "Code": "42343007",
+            "Score": 0.8071746230125427
+          },
+          {
+            "Description": "Heart failure (disorder)",
+            "Code": "84114007",
+            "Score": 0.15937066078186035
+          },
+          {
+            "Description": "Chronic congestive heart failure (disorder)",
+            "Code": "88805009",
+            "Score": 0.1421411633491516
+          },
+          {
+            "Description": "Congestive heart failure stage C (disorder)",
+            "Code": "67441000119101",
+            "Score": 0.11035950481891632
+          },
+          {
+            "Description": "Congestive heart failure clinic (environment)",
+            "Code": "702843005",
+            "Score": 0.09652666002511978
+          }
+        ]
+      },
+      {
+        "Id": 41,
+        "Text": "heart",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.8617406487464905,
+        "BeginOffset": 1581,
+        "EndOffset": 1586,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Heart structure (body structure)",
+            "Code": "80891009",
+            "Score": 0.14154958724975586
+          },
+          {
+            "Description": "Congestive heart failure (disorder)",
+            "Code": "42343007",
+            "Score": 0.0036670209374278784
+          },
+          {
+            "Description": "Structure of heart tissue (body structure)",
+            "Code": "386108004",
+            "Score": 0.0020036001224070787
+          },
+          {
+            "Description": "Congestive heart failure clinic (environment)",
+            "Code": "702843005",
+            "Score": 0.0016127449925988913
+          },
+          {
+            "Description": "Structure of cardiovascular system (body structure)",
+            "Code": "113257007",
+            "Score": 0.0012813610956072807
+          }
+        ]
+      }
+    ],
+    "used_fallback": false,
+    "top3_fallback": [],
+    "used_summary_fallback": false,
+    "used_doctype_fallback": false
+  },
+  "summaries": {
+    "clinician": {
+      "summary": "Female patient diagnosis: Diabetic retinopathy R2M1P0. Right eye: VA 6/18, IOP 16 mmHg. Macular oedema, microaneurysms. Left eye: VA 6/24, IOP 18 mmHg. Laser scars, hard exudates.\nIntravitreal anti-VEGF injection given. Follow-up in 4 months.\nNo urgent actions required",
+      "confidence": 0.8
+    },
+    "patient": {
+      "summary": "female patient was found to have anaemia related to their chronic kidney disease. An infusion of iron was given to help with this. The patient should have their blood tests repeated in 4 weeks to check the iron levels. The patient was also noted to have other medical conditions including heart and kidney disease, high blood pressure, and diabetes. The patient will need to follow up with their doctor for ongoing management of these conditions",
+      "confidence": 0.8
+    },
+    "pharmacist": {
+      "summary": "No medications were documented in the provided clinical summary. The patient was seen for an IV iron infusion, with no reported reactions during or after the infusion. The summary advised the patient to repeat bloods 4 weeks after the transfusion, and a blood form was given. No new prescriptions were noted. The patient has a history of drug allergies to ACE inhibitors, amlodipine, and mirtazapine, which should be checked if any new medications are prescribed. No other medication management details were provided.",
+      "confidence": 0.8
+    },
+    "follow_up_actions": "1. Repeat blood tests in 4 weeks (patient responsibility).\n2. Follow up with GP for medication review and any medication changes required (GP responsibility).\n3. Attend scheduled follow-up appointment with renal specialist (patient responsibility). \n4. Contact medicines helpline if any questions arise about medications (patient responsibility).",
+    "gp_actions": "1. Repeat blood tests 4 weeks after the IV iron infusion to monitor the patient's response.\n2. Continue monitoring the patient's chronic conditions, including chronic kidney disease, congestive heart failure, hypertension, and diabetes mellitus.\n3. Ensure the patient's ReSPECT (Recommended Summary Plan for Emergency Care and Treatment) and DNAR (Do Not Attempt Resuscitation) orders are up to date and communicated to the relevant healthcare providers.\n4. Advise the patient to contact the GP or healthcare team if they experience any reactions or adverse effects from their medications, such as the swelling of the feet, agitation, drowsiness, or unsteadiness observed previously.",
+    "llm_confidence": 0.8
+  },
+  "gp_actions": "1. Repeat blood tests 4 weeks after the IV iron infusion to monitor the patient's response.\n2. Continue monitoring the patient's chronic conditions, including chronic kidney disease, congestive heart failure, hypertension, and diabetes mellitus.\n3. Ensure the patient's ReSPECT (Recommended Summary Plan for Emergency Care and Treatment) and DNAR (Do Not Attempt Resuscitation) orders are up to date and communicated to the relevant healthcare providers.\n4. Advise the patient to contact the GP or healthcare team if they experience any reactions or adverse effects from their medications, such as the swelling of the feet, agitation, drowsiness, or unsteadiness observed previously.",
+  "follow_up_actions": "1. Repeat blood tests in 4 weeks (patient responsibility).\n2. Follow up with GP for medication review and any medication changes required (GP responsibility).\n3. Attend scheduled follow-up appointment with renal specialist (patient responsibility). \n4. Contact medicines helpline if any questions arise about medications (patient responsibility).",
+  "phi_entity_count": 30
+}

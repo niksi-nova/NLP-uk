@@ -1,0 +1,192 @@
+{
+  "doc_id": "1f695d13",
+  "filename": "1f695d13_1._456_949_5818.pdf",
+  "processed_at": "2026-05-04T12:26:14.961647",
+  "status": "processed",
+  "pipeline_stages": {
+    "tier0": {
+      "status": "done",
+      "note": "document_handler: 5 page(s) from .PDF | OpenCV preprocessing: applied"
+    },
+    "tier1": {
+      "status": "done",
+      "confidence": 0.891,
+      "pages": 5,
+      "chars_extracted": 5552
+    },
+    "tier2": {
+      "status": "queued_for_layoutlmv3",
+      "note": "Textract confidence < 90% \u2014 document routed to LayoutLMv3 refinement queue"
+    },
+    "track_a": {
+      "status": "done",
+      "entities_found": 0,
+      "confidence": 0.724
+    },
+    "hipaa": {
+      "status": "done",
+      "phi_entities_detected": 76,
+      "note": "PHI detection via hipaa_compliance.detect_phi_entities()"
+    },
+    "track_b": {
+      "status": "done",
+      "confidence": 0.8,
+      "letter_type": "Ophthalmology Letter"
+    }
+  },
+  "requires_review": false,
+  "pages_processed": 5,
+  "preview_pages": [
+    "/pages/1f695d13/orig_01.png",
+    "/pages/1f695d13/orig_02.png",
+    "/pages/1f695d13/orig_03.png",
+    "/pages/1f695d13/orig_04.png",
+    "/pages/1f695d13/orig_05.png"
+  ],
+  "preview_image": "/pages/1f695d13/orig_01.png",
+  "unified_confidence": 0.821,
+  "confidence_threshold": 0.7,
+  "letter_type": "Ophthalmology Letter",
+  "hospital_trust": "Frimley Health NHS Foundation Trust",
+  "is_sensitive": false,
+  "patient_info": {
+    "name": "ALOY, Grace",
+    "nhs_number": "456 949 5818",
+    "dob": "16/3/1975",
+    "sex": "Female",
+    "address": "",
+    "hospital_number": "11931435",
+    "gp_practice": "",
+    "pathways_urgency": "",
+    "presenting_complaint": "",
+    "gravida_parity": "",
+    "edd": "",
+    "gestational_age": ""
+  },
+  "structured": {
+    "admission_date": "8/2/2026",
+    "discharge_date": "08/02/2026",
+    "appointment_date": "",
+    "consultant": "GEORGE HANNA",
+    "department": "General Surgery",
+    "hospital": "",
+    "gp_actions": "No action required.",
+    "diagnosis_text": "Post-op Diagnosis",
+    "admission_method": "Elective - Waiting List",
+    "discharge_method": "Discharged On Clinical Advice Discharging specialty: General",
+    "procedure": "In martherchip wh the Mir stry of Defence",
+    "indication": "",
+    "impression": ""
+  },
+  "clinical_specifics": {
+    "ophthalmic_diagnosis": "Post-op Diagnosis"
+  },
+  "extracted_text": "Committed to excellence)\nWorking (ogether)\nFacing the future)\nNHS\nFrimley Health\nNHS Foundation Trust\nWexham Park Hospital\nWexham Main Theatre\nWexham Street\nSlough\nBerkshire\nSL2 4HL\nDept: 03006 145000\nLoc: 03006 145000\nRe: ALOY, Grace\nNHS No: 456 949 5818\nDOB: 16/3/1975, Gender: female\nMRN: 11931435\nAdmission date: 8/2/2026\nReason for admission:\nAdmission time: 07:23\nAdmission method: Elective - Waiting List\nLength of stay: 0 days\nSource of admission: Usual Place of Residence\nDischarge Date: 08/02/2026\nDischarging consultant: GEORGE HANNA, AKRAM\nDischarge Time:\nDischarge method: Discharged On Clinical Advice Discharging specialty: General Surgery\nOr With Clinical Consent\nDischarge type:\nDischarge location: WPH DSU2\nDischarge Summary completed by: SALEEB,ABANOUB (Specialty and Associate Specialist)\nDiagnosis\nPost-op Diagnosis\nA Haemorrhoids [K64.9]\nProcedure Information\nProcedure date: 8/2/2026\nProcedure(s) (LRB):\nIn martherchip wh the Mir stry of Defence\nFundley deal.\" importerates Phirley Fark llere and Wrinain Park Besp a\nPag Office. Partsm Poad In G01.\n\nGrace ALOY\n16/3/19/5\n11931435\n1/5\nEUA, flexible sigmoidoscopy and excsion of perianal skin tags. +_ injection of haemorrhoids. Patient\ndoes not want banding (N/A)\nFlexible sigmoidoscopy showed inflamed mucosa in the sigmoid and descending colon, biopsies taken.\nExcision of skin tags\nPhenol injection in haemonhoids at 12 Oc\nPost-op Instructions\nNever deny the call to stool\n5 portions of fresh fruit and vegetables every day\n3 litres of water\nDo not strain\nAvoid constipation\nDo not spend more than 3 minutes sitting on the toilet\nTelephone appointment with Mr George in 6 weeks\nActions Required of FHFT\nInvestigations Pending at Discharge\nSpecimens\nSource\nTy\nTests\nCollected By\nCollected At\nPriority\nRectum\nTissue\nHISTOLOGY, TISSUE\nAkram GEORGE\n8/2/26 10:33\nUrgent\n(Histolog\nHANNA, MD\ny)\nDescr tion: Rectal Biopsy\nAnus\nTissue\nHISTOLOGY, TISSUE Akram GEORGE 8/2/26 10:42 Routine\n(Histolog\nHANNA, MD\ny)\nDescriber prion: anal skin rag\nUnresulted Labs\nNo unresulted labs\nOutpatient Follow-up\nYou have no referrals or appointment requests from this visit.\nIn martnerchip wh the Min stry of Defence\nFuirley deal.\" interporates Phirley Fark llere and Wrxnain Park\nFor\nPartsm\nPoad\nG016\n\nGrace ALOY\n10/3/19/5\n11931435\n2/5\nActions Required of General Practice (GP)\nNo action required.\nFit Note Issued: No\nYour medication list\nCONTINUE taking this medication\nLast Dose\nNext Dose\nInstructions\nGiven\nDue\nlansoprazole 15mg gastro-resistant capsule Take ONE\ncapsule once a\nday. Do not\ncrush or chew.\nmacrogol compound NPF sugar free oral\nTake ONE\npowder\nsachet(s) once\nonly for 1\ndose.\nnaproxen 250mg gastro-resistant tablet\nTake ONE\ntablet twice a\nday with\nmeals.\nparacetamol 500mg tablet\nTake TWO\ntablets four\ntimes a day as\nrequired for\npain.\nIn earthership wh the Mir stry of Defence\nFundey deal.\" imporates Chirley Park Corpita Heatherwore llero al and Wrinain Park Hosp a\nFor fice. Partsm jth Poad IIIT \",, Cambeley Surrey, G016 : 0.00\n\nGrace ALOY\n10/3/1975\n11931435\n4/5\nAllergies as of 8/2/2026\nSeverity\nNoted\nReaction Type\nReactions\nCodeine\nNot Specified\n10/12/2025\nVomiting\nPatient Infection Status\nNone to display\nAssessments:\nPain Score: None (0/3)\nResuscitation status: FULL RESUSCITATION\nResuscitation status reflects decisions made during this admission and does not replace\ndocumentation in the patient's notes or ReSPECT form.\nDistribution List:\nMrs. Grace ALOY\nEASTHAMPSTEAD SURGERY\nDate completed:\n8/2/2026\nGP Practice\nOrganisation:\nWexham Park Hospital\nGP details:\nEASTHAMPSTEAD SURGERY\nWexham Street\n23 RECTORY LANE\nSlough\nEASTHAMPSTEAD\nBerkshire\nBRACKNELL\nSL2 4HL\nBerkshire\nLoc: 03006 145000\nRG12 7BB\n01344 457535\nIn martherchip wh the Mir stry of Defence\nFundey Heal.\" incorporates Chirley Fark formila and Wrinain Park\nPag\nfice.\nPartsm\nPoad\nIII\n\",,\nG01.\n\nGrace ALOY\n10/3/19/5\n11331435\n5/5\nPrimary Care / GP Clinical Support\nIf you have any questions relating to the clinical content of this discharge letter. Please contact us on:\nDepartmen\nFrimley Park Hospital\nHeatherwood and Wexham Park\nt\nHospital\nGeneral\nInftgensurgery.chmicaladminhwonwenhsr\nSurgery -\n613 2358/ 4160\n8\nBreast,\n0300 615 4198\nColorectal,\n00 613 4139/\nOpening time: Mon-Fri 09:00-17:00\n0300 613\nUpperGl\n4052/2614\nOpening time: Mon-Fri 08:30-16:30\nGeneral\nIhfturelegyclinicaladmintpheonhs.neg\nSurgery -\n0300 613 4450/ 4590/ 3628/\n0300 615 4198\nUrology\nOpening time: Mon-Fri 08:30-16:30\nOpening time: Mon-Fri 09:00-17:00\nGeneral\nIht.vascularsurgery-woh@rhs.net,\nSurgery -\n0300 613 4291/ 2141/ 4287\n0300 615 4198\nVascular\nOpening time: Mon-ri 08:30-16:30\nOpening time: Mon-Tri 09:00-17:00\nSurgical and\nPatient 7am - 9pm 7 days a week helpline\nUrology\nnumber for clinical concerns, up to 28 days\n[mergency\npost-discharge 07990 528061\nUnit (SEU\nSDEC)\nFurther Discharge Support Contact Details:\nThe FHFT GP Centre website: https://www.fhft.nhs.uk/gps contains further support details\nincluding directories for: Routine and Urgent Advice for clinicians (including ward contact\ndetails); all our Same Day Emergency Care Services (SDEC); and for non-urgent clinical\nqueries there is a list of Medical secretary/admin support email addresses' under the 'Referrals &\nkey contacts' section.\nFor Clinical Queries with regards to prescribing or Clinical content of this letter please contact the\nDischarging Consultant through the Medical Secretary/Admin Support e-mail address available\nat https://www.ihft.nhs.uk/gps/referrils-and-key contacts@Referrals-support\nIn wh the Mir of Defence\nFundey\nand\nPark\nPAR\nPoad",
+  "icd_codes": [
+    "K64.9",
+    "G01"
+  ],
+  "medications_raw": [
+    {
+      "name": "lansoprazole",
+      "dose": "15mg gastro-resistant capsule Take ONE",
+      "raw": "lansoprazole 15mg gastro-resistant capsule Take ONE"
+    },
+    {
+      "name": "naproxen",
+      "dose": "250mg gastro-resistant tablet",
+      "raw": "naproxen 250mg gastro-resistant tablet"
+    },
+    {
+      "name": "paracetamol",
+      "dose": "500mg tablet",
+      "raw": "paracetamol 500mg tablet"
+    }
+  ],
+  "snomed": {
+    "problems": [],
+    "medications": [],
+    "diagnoses": [
+      {
+        "text": "pain",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "22253000",
+        "description": "Pain (finding)",
+        "confidence": 0.919,
+        "entity_id": "b49e7855",
+        "source": "term_extraction"
+      },
+      {
+        "text": "Vomiting",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "422400008",
+        "description": "Vomiting (disorder)",
+        "confidence": 0.86,
+        "entity_id": "046c687c",
+        "source": "term_extraction"
+      },
+      {
+        "text": "FULL RESUSCITATION",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "304252001",
+        "description": "For resuscitation (finding)",
+        "confidence": 0.394,
+        "entity_id": "e95ddba2",
+        "source": "term_extraction"
+      }
+    ],
+    "all_entities": [],
+    "used_fallback": true,
+    "top3_fallback": [
+      {
+        "text": "pain",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "22253000",
+        "description": "Pain (finding)",
+        "confidence": 0.919,
+        "entity_id": "b49e7855",
+        "source": "term_extraction"
+      },
+      {
+        "text": "Vomiting",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "422400008",
+        "description": "Vomiting (disorder)",
+        "confidence": 0.86,
+        "entity_id": "046c687c",
+        "source": "term_extraction"
+      },
+      {
+        "text": "FULL RESUSCITATION",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "304252001",
+        "description": "For resuscitation (finding)",
+        "confidence": 0.394,
+        "entity_id": "e95ddba2",
+        "source": "term_extraction"
+      }
+    ],
+    "used_summary_fallback": false,
+    "used_doctype_fallback": false
+  },
+  "summaries": {
+    "clinician": {
+      "summary": "Female patient diagnosis: Diabetic retinopathy grade R2M1P0. Right eye: VA 6/18, IOP 18 mmHg. Moderate NPDR with macular edema. Left eye: VA 6/12, IOP 17 mmHg. Moderate NPDR. Treatment: Bilateral macular laser completed. Intravitreal anti-VEGF injection planned in 4 weeks. Follow-up: Review in 3 months. No urgent actions required",
+      "confidence": 0.8
+    },
+    "patient": {
+      "summary": "female patient underwent an examination and procedure to , which are swollen veins in the anus. Skin tags were removed and the haemorrhoids were injected. The doctor advised the patient on lifestyle changes to help prevent constipation and further haemorrhoid issues. The patient will have a telephone appointment with the doctor in 6 weeks to follow up. The patient should contact their doctor if they have any concerns in the meantime",
+      "confidence": 0.8
+    },
+    "pharmacist": {
+      "summary": "No medications were documented in the provided discharge letter. The only information regarding medications was an allergy to codeine, which caused a reaction of vomiting.",
+      "confidence": 0.8
+    },
+    "follow_up_actions": "1. Repeat Hb in 6-8 weeks. Responsible: Patient, follow up with GP.\n2. Telephone appointment with Mr George in 6 weeks. Responsible: Patient, follow up with specialist.\n3. Do not strain, avoid constipation, do not spend more than 3 minutes sitting on the toilet. Responsible: Patient.\n4. Collect histology results from rectal biopsy and anal skin tag excision. Responsible: GP.",
+    "gp_actions": "Based on the given discharge letter, the GP needs to take the following actions:\n\n1. No medication has been prescribed, so no action is required by the GP for medications.\n2. No referrals have been made, so no referral action is required by the GP.\n3. Monitor the patient's condition and ensure the post-operative instructions are followed, including avoiding constipation, limiting time on the toilet, and attending the telephone appointment with Mr George in 6 weeks.\n4. Provide safety-netting advice to the patient, advising them to contact the GP if they have any concerns or issues following the surgery.",
+    "llm_confidence": 0.8
+  },
+  "gp_actions": "No action required.",
+  "follow_up_actions": "1. Repeat Hb in 6-8 weeks. Responsible: Patient, follow up with GP.\n2. Telephone appointment with Mr George in 6 weeks. Responsible: Patient, follow up with specialist.\n3. Do not strain, avoid constipation, do not spend more than 3 minutes sitting on the toilet. Responsible: Patient.\n4. Collect histology results from rectal biopsy and anal skin tag excision. Responsible: GP.",
+  "phi_entity_count": 76
+}

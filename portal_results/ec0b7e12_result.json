@@ -1,0 +1,1459 @@
+{
+  "doc_id": "ec0b7e12",
+  "filename": "ec0b7e12_20260427172648_Redacted.pdf",
+  "processed_at": "2026-05-07T07:15:29.985966",
+  "status": "processed",
+  "pipeline_stages": {
+    "tier0": {
+      "status": "done",
+      "note": "document_handler: 2 page(s) from .PDF | OpenCV preprocessing: skipped (cv2 unavailable)"
+    },
+    "tier1": {
+      "status": "done",
+      "confidence": 0.988,
+      "pages": 2,
+      "chars_extracted": 2736
+    },
+    "tier2": {
+      "status": "skipped",
+      "note": "Textract confidence >= 90% \u2014 direct to Track A/B (SRS \u00a77 step 2)"
+    },
+    "track_a": {
+      "status": "done",
+      "entities_found": 54,
+      "confidence": 0.643
+    },
+    "hipaa": {
+      "status": "done",
+      "phi_entities_detected": 54,
+      "note": "PHI detection via hipaa_compliance.detect_phi_entities()"
+    },
+    "track_b": {
+      "status": "done",
+      "confidence": 0.8,
+      "letter_type": "Ophthalmology Letter"
+    }
+  },
+  "requires_review": false,
+  "pages_processed": 2,
+  "preview_pages": [
+    "/pages/ec0b7e12/orig_01.png",
+    "/pages/ec0b7e12/orig_02.png"
+  ],
+  "preview_image": "/pages/ec0b7e12/orig_01.png",
+  "unified_confidence": 0.844,
+  "confidence_threshold": 0.7,
+  "letter_type": "Ophthalmology Letter",
+  "hospital_trust": "University Hospital Southampton NHS Foundation Trust",
+  "is_sensitive": true,
+  "patient_info": {
+    "name": "Not available",
+    "nhs_number": "Not available",
+    "dob": "Not available",
+    "sex": "Male",
+    "address": "",
+    "hospital_number": "7597279",
+    "gp_practice": "",
+    "pathways_urgency": "",
+    "presenting_complaint": "",
+    "gravida_parity": "",
+    "edd": "",
+    "gestational_age": ""
+  },
+  "structured": {
+    "admission_date": "",
+    "discharge_date": "",
+    "appointment_date": "",
+    "consultant": "Paediatric Nephrologists:",
+    "department": "email: paediatricurology@uhs.nhs.uk",
+    "hospital": "",
+    "gp_actions": "",
+    "diagnosis_text": "",
+    "admission_method": "",
+    "discharge_method": "",
+    "procedure": "",
+    "indication": "",
+    "impression": ""
+  },
+  "clinical_specifics": {
+    "gp_address": "50 Bywood, Bracknell. RG12 7RF, Hospital Number: 7597279, NHS Number:"
+  },
+  "extracted_text": "NHS\nUniversity Hospital\n*7597279*\nSouthampton\nNHS Foundation Trust\n27 APR 2026\nRegional Paediatric Nephro - Urology Service\nDivision C\nConsultant Paediatric Nephrologists:\nProf Rodney Gilbert - Dr Shuman Haq - Dr Arvind Nagra - Dr Matt Harmer - Dr\nSouthampton Children's Hospital\nMadhuri Raja\nPaediatric Urology\nConsultant Paediatric Urologists:\nMailpoint 44\nMr Sengamalai Manoharan - Mr Stephen Griffin - Mr Ewan Brownlee\nSouthampton General Hospital\nTremona Road\nOur Ref: EMB/7597279\nSouthampton\nSO16 6YD\nDate of Clinic: 20 April 2026\nTelephone: 023 8120 8464\nDepartment email: paediatricurology@uhs.nhs.uk\nDr C Suresh\nEasthampstead Surgery\n23 Rectory Lane\nEasthampstead\nBracknell\nBerkshire\nRG12 7BB\nDear Dr Suresh\n50 Bywood, Bracknell. RG12 7RF\nHospital Number: 7597279, NHS Number:\nBackground:\n1. Cloacal Anomaly\n2. Prenatal perforation of rectal pouch onto the perineum\n3. Partial cloacal repair with separation of rectum from cloaca, anoplasty and\nconversion of transverse colostomy to from loop to end colostomy in September\n2020\n4. Rectal stenosis - refractory to dilations\n5. Two hemi-vaginas with two cervices, separated by a septum with two uterine\nsystems\n6. Recurrent UTI's - much improved following partial cloaca repair\n7. Further reconstruction likely to be deferred until nearer to puberty\n8. Mild rectal prolapse - repaired Feb 2026\n9. Recent ultrasound scans in Nov 2025 and 2024 showed presence of fluid in vagina\n10. Known to have incomplete emptying on NIBA whilst on Solifenacin (although ?\nfluid in vagina)\nMedications:\nNone - suggest restarting Solifenacin at 3mg once daily - GP to prescribe please\nBowel Habit:\nColostomy functioning well, no issues.\nI reviewed Emilie in my paediatric urology outpatient clinic this afternoon alongside her\nmother. Unfortunately Emilie seems to be having either good urinary continence on\nSolifenacin with associated lower tract UTI's, or is wet without UTI's.\nDoc Ref. 45274243\nDate Printed: 22/04/2026\nPage 1 of 2\n\n*7597279*\nWe have agreed the following plan:\nRestart Solifenacin\nNIBA - if having further UTI's on Solifenacin, do NIBA without Solifenacin to see if\nstill not emptying well and if so, then EUA Cystovaginscopy\nMeantime, aim for good oral fluid intake, regular voiding, double voiding and\nrelaxed position with cough afterwards\nFurther appointment in 6 months time either way\nYours Sincerely,\nelectronically checked and signed\nSigned By Ewan Browniee\nEwan M Brownlee MSc FRCS (Paed Surg)\nConsultant Paediatric Urologist\nSouthampton Children's Hospital\nCopies to:\nParent or Guardian of\nBracknell\nRG12 7RF\nDr K O'Farrell\nConsultant Paediatrician\nFrimley Park Hospital\nPortsmouth Road\nFrimley\nSurrey\nGU16 7UJ\nDoc Ref. 45274243\nDate Printed: 22/04/2026\nPage 2 of 2",
+  "icd_codes": [],
+  "medications_raw": [
+    {
+      "name": "None - suggest restarting Solifenacin at",
+      "dose": "3mg once daily - GP to prescribe please",
+      "raw": "None - suggest restarting Solifenacin at 3mg once daily - GP to prescribe please"
+    }
+  ],
+  "snomed": {
+    "problems": [
+      {
+        "text": "fluid in vagina",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "271868006",
+        "description": "Vaginal fluid abnormal (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "bc6d2caf",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "incomplete emptying",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "249288007",
+        "description": "Incomplete emptying of bladder (finding)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "76865a2c",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "fluid in vagina",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "271868006",
+        "description": "Vaginal fluid abnormal (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "ec352655",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Bowel Habit:\nColostomy functioning well",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "15836005",
+        "description": "Colostomy malfunction (disorder)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "3220b3c1",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Colostomy functioning well",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "15836005",
+        "description": "Colostomy malfunction (disorder)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "76fcfea3",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "issues",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "55607006",
+        "description": "Problem (finding)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "af6d03f2",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "good urinary continence",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "129023004",
+        "description": "Continence independent (finding)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "08e907d2",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "wet",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "17461003",
+        "description": "Wet (qualifier value)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "414b38bc",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "not emptying well",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "165494000",
+        "description": "Red blood cell not clumping (finding)",
+        "confidence": 0.5971075296401978,
+        "entity_id": "8d92c675",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "emptying well",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "20572008",
+        "description": "Good (qualifier value)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "437d8a7d",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "cough",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "49727002",
+        "description": "Cough (finding)",
+        "confidence": 0.9584784507751465,
+        "entity_id": "92970d21",
+        "source": "comprehend_medical"
+      }
+    ],
+    "medications": [],
+    "diagnoses": [
+      {
+        "text": "Cloacal Anomaly",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "84581000",
+        "description": "Cloacal disease (disorder)",
+        "confidence": 0.7950295805931091,
+        "entity_id": "90f9f5f8",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Prenatal perforation of rectal pouch onto the perineum",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "65390006",
+        "description": "Perinatal intestinal perforation (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "298e6713",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Rectal stenosis",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "60658009",
+        "description": "Stenosis of rectum (disorder)",
+        "confidence": 0.7950295805931091,
+        "entity_id": "9c5d24da",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "Two hemi-vaginas",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "110847000",
+        "description": "Urethra and vagina (combined site) (body structure)",
+        "confidence": 0.5330596566200256,
+        "entity_id": "6cc72b58",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "UTI's",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "68566005",
+        "description": "Urinary tract infectious disease (disorder)",
+        "confidence": 0.821601390838623,
+        "entity_id": "8f9bc21c",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "rectal prolapse",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "57773001",
+        "description": "Rectal prolapse (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "a9f77c72",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "lower tract UTI's",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "4009004",
+        "description": "Lower urinary tract infectious disease (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "6419945a",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "UTI's",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "68566005",
+        "description": "Urinary tract infectious disease (disorder)",
+        "confidence": 0.7172441482543945,
+        "entity_id": "2eae9e60",
+        "source": "comprehend_medical"
+      },
+      {
+        "text": "UTI's",
+        "category": "MEDICAL_CONDITION",
+        "snomed_code": "68566005",
+        "description": "Urinary tract infectious disease (disorder)",
+        "confidence": 0.6603351831436157,
+        "entity_id": "95545f62",
+        "source": "comprehend_medical"
+      }
+    ],
+    "all_entities": [
+      {
+        "Id": 3,
+        "Text": "Cloacal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 801,
+        "EndOffset": 808,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cloaca structure (body structure)",
+            "Code": "64582000",
+            "Score": 0.2964775860309601
+          },
+          {
+            "Description": "Structure of cloacal membrane (body structure)",
+            "Code": "113365008",
+            "Score": 0.07462476193904877
+          },
+          {
+            "Description": "Entire cloaca (body structure)",
+            "Code": "362857006",
+            "Score": 0.05752015486359596
+          },
+          {
+            "Description": "Cloacal disease (disorder)",
+            "Code": "84581000",
+            "Score": 0.03823589161038399
+          },
+          {
+            "Description": "Structure of cloacogenic area of rectum (body structure)",
+            "Code": "72981004",
+            "Score": 0.023775378242135048
+          }
+        ]
+      },
+      {
+        "Id": 4,
+        "Text": "Cloacal Anomaly",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 801,
+        "EndOffset": 816,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.5692254304885864,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 3,
+            "BeginOffset": 801,
+            "EndOffset": 808,
+            "Text": "Cloacal",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Cloaca structure (body structure)",
+                "Code": "64582000",
+                "Score": 0.2964775860309601
+              },
+              {
+                "Description": "Structure of cloacal membrane (body structure)",
+                "Code": "113365008",
+                "Score": 0.07462476193904877
+              },
+              {
+                "Description": "Entire cloaca (body structure)",
+                "Code": "362857006",
+                "Score": 0.05752015486359596
+              },
+              {
+                "Description": "Cloacal disease (disorder)",
+                "Code": "84581000",
+                "Score": 0.03823589161038399
+              },
+              {
+                "Description": "Structure of cloacogenic area of rectum (body structure)",
+                "Code": "72981004",
+                "Score": 0.023775378242135048
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.8203471899032593
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cloacal disease (disorder)",
+            "Code": "84581000",
+            "Score": 0.24263440072536469
+          },
+          {
+            "Description": "Anomaly of pleura (disorder)",
+            "Code": "253748000",
+            "Score": 0.1993974894285202
+          },
+          {
+            "Description": "Anomaly of placenta (disorder)",
+            "Code": "33552005",
+            "Score": 0.18278822302818298
+          },
+          {
+            "Description": "Congenital uterine anomaly (disorder)",
+            "Code": "37849005",
+            "Score": 0.1298912912607193
+          },
+          {
+            "Description": "Congenital anomaly of vagina (disorder)",
+            "Code": "52904006",
+            "Score": 0.12976717948913574
+          }
+        ]
+      },
+      {
+        "Id": 5,
+        "Text": "Prenatal perforation of rectal pouch onto the perineum",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 820,
+        "EndOffset": 874,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5330596566200256,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 6,
+            "BeginOffset": 844,
+            "EndOffset": 874,
+            "Text": "rectal pouch onto the perineum",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Structure of rectouterine pouch (body structure)",
+                "Code": "53843000",
+                "Score": 0.16414976119995117
+              },
+              {
+                "Description": "Rectal (intended site)",
+                "Code": "738986003",
+                "Score": 0.12114981561899185
+              },
+              {
+                "Description": "Perforation of rectum (disorder)",
+                "Code": "10825001",
+                "Score": 0.11862218379974365
+              },
+              {
+                "Description": "Structure of perineal flexure of rectum (body structure)",
+                "Code": "113285009",
+                "Score": 0.09758204221725464
+              },
+              {
+                "Description": "Rectum part (body structure)",
+                "Code": "372237002",
+                "Score": 0.09756256639957428
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.6248409748077393
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Perinatal intestinal perforation (disorder)",
+            "Code": "65390006",
+            "Score": 0.3108929395675659
+          },
+          {
+            "Description": "Perforation of rectum (disorder)",
+            "Code": "10825001",
+            "Score": 0.2662745416164398
+          },
+          {
+            "Description": "Delivery finding (finding)",
+            "Code": "118215003",
+            "Score": 0.22541193664073944
+          },
+          {
+            "Description": "Neonatal intestinal perforation co-occurrent and due to in utero intraluminal obstruction (disorder)",
+            "Code": "735722005",
+            "Score": 0.22537465393543243
+          },
+          {
+            "Description": "Fetal intrauterine perforation of intestine (disorder)",
+            "Code": "721613002",
+            "Score": 0.21877628564834595
+          }
+        ]
+      },
+      {
+        "Id": 6,
+        "Text": "rectal pouch onto the perineum",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 844,
+        "EndOffset": 874,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Structure of rectouterine pouch (body structure)",
+            "Code": "53843000",
+            "Score": 0.16414976119995117
+          },
+          {
+            "Description": "Rectal (intended site)",
+            "Code": "738986003",
+            "Score": 0.12114981561899185
+          },
+          {
+            "Description": "Perforation of rectum (disorder)",
+            "Code": "10825001",
+            "Score": 0.11862218379974365
+          },
+          {
+            "Description": "Structure of perineal flexure of rectum (body structure)",
+            "Code": "113285009",
+            "Score": 0.09758204221725464
+          },
+          {
+            "Description": "Rectum part (body structure)",
+            "Code": "372237002",
+            "Score": 0.09756256639957428
+          }
+        ]
+      },
+      {
+        "Id": 7,
+        "Text": "Partial cloacal repair",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 878,
+        "EndOffset": 900,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PAST_HISTORY",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Partial failure of replantation (disorder)",
+            "Code": "213165002",
+            "Score": 0.12656192481517792
+          },
+          {
+            "Description": "In partial remission (qualifier value)",
+            "Code": "103337004",
+            "Score": 0.10981646925210953
+          },
+          {
+            "Description": "Partial restoration of crown of tooth (procedure)",
+            "Code": "173309002",
+            "Score": 0.10454300791025162
+          },
+          {
+            "Description": "Repair of persistant cloaca by abdominal and sacroperineal approach (procedure)",
+            "Code": "440096003",
+            "Score": 0.10194337368011475
+          },
+          {
+            "Description": "Repair of recurrent umbilical hernia (procedure)",
+            "Code": "425710008",
+            "Score": 0.10117657482624054
+          }
+        ]
+      },
+      {
+        "Id": 9,
+        "Text": "Partial cloacal repair with separation of rectum from cloaca, anoplasty and\nconversion of transverse colostomy to from loop to end colostomy",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 878,
+        "EndOffset": 1018,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PAST_HISTORY",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Repair of paracolostomy hernia (procedure)",
+            "Code": "238203006",
+            "Score": 0.381521999835968
+          },
+          {
+            "Description": "Repair of rectum (procedure)",
+            "Code": "276186005",
+            "Score": 0.3799704611301422
+          },
+          {
+            "Description": "Repair of rectal prolapse (procedure)",
+            "Code": "12092003",
+            "Score": 0.33706796169281006
+          },
+          {
+            "Description": "Partial colectomy with coloproctostomy (procedure)",
+            "Code": "82900007",
+            "Score": 0.33496153354644775
+          },
+          {
+            "Description": "Repair of recurrent umbilical hernia (procedure)",
+            "Code": "425710008",
+            "Score": 0.31120765209198
+          }
+        ]
+      },
+      {
+        "Id": 8,
+        "Text": "cloacal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 886,
+        "EndOffset": 893,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cloaca structure (body structure)",
+            "Code": "64582000",
+            "Score": 0.4498070478439331
+          },
+          {
+            "Description": "Structure of cloacal membrane (body structure)",
+            "Code": "113365008",
+            "Score": 0.1295575350522995
+          },
+          {
+            "Description": "Entire cloaca (body structure)",
+            "Code": "362857006",
+            "Score": 0.10661426931619644
+          },
+          {
+            "Description": "Entire cloacal membrane (body structure)",
+            "Code": "308826008",
+            "Score": 0.05017751082777977
+          },
+          {
+            "Description": "Colonic part of cloaca (body structure)",
+            "Code": "68139002",
+            "Score": 0.04483695700764656
+          }
+        ]
+      },
+      {
+        "Id": 10,
+        "Text": "rectum",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7613970637321472,
+        "BeginOffset": 920,
+        "EndOffset": 926,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Rectum structure (body structure)",
+            "Code": "34402009",
+            "Score": 0.7067631483078003
+          },
+          {
+            "Description": "Rectum wall structure (body structure)",
+            "Code": "511000202101",
+            "Score": 0.02740047127008438
+          },
+          {
+            "Description": "Structure of region of rectum (body structure)",
+            "Code": "245430001",
+            "Score": 0.023909706622362137
+          },
+          {
+            "Description": "Rectal (intended site)",
+            "Code": "738986003",
+            "Score": 0.017512904480099678
+          },
+          {
+            "Description": "Rectal (qualifier value)",
+            "Code": "255582007",
+            "Score": 0.015799444168806076
+          }
+        ]
+      },
+      {
+        "Id": 11,
+        "Text": "cloaca",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7613970637321472,
+        "BeginOffset": 932,
+        "EndOffset": 938,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cloaca structure (body structure)",
+            "Code": "64582000",
+            "Score": 0.2693586051464081
+          },
+          {
+            "Description": "Entire cloaca (body structure)",
+            "Code": "362857006",
+            "Score": 0.017078520730137825
+          },
+          {
+            "Description": "Structure of cloacogenic area of rectum (body structure)",
+            "Code": "72981004",
+            "Score": 0.010719415731728077
+          },
+          {
+            "Description": "Colonic part of cloaca (body structure)",
+            "Code": "68139002",
+            "Score": 0.008110427297651768
+          },
+          {
+            "Description": "Structure of cloacal membrane (body structure)",
+            "Code": "113365008",
+            "Score": 0.005139123648405075
+          }
+        ]
+      },
+      {
+        "Id": 13,
+        "Text": "Rectal",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.6603351831436157,
+        "BeginOffset": 1040,
+        "EndOffset": 1046,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Rectum structure (body structure)",
+            "Code": "34402009",
+            "Score": 0.6391388773918152
+          },
+          {
+            "Description": "Rectal (intended site)",
+            "Code": "738986003",
+            "Score": 0.22872397303581238
+          },
+          {
+            "Description": "Rectal (qualifier value)",
+            "Code": "255582007",
+            "Score": 0.1951712965965271
+          },
+          {
+            "Description": "Rectum wall structure (body structure)",
+            "Code": "511000202101",
+            "Score": 0.11308930069208145
+          },
+          {
+            "Description": "Rectal route (qualifier value)",
+            "Code": "37161004",
+            "Score": 0.09040557593107224
+          }
+        ]
+      },
+      {
+        "Id": 14,
+        "Text": "Rectal stenosis",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.7950295805931091,
+        "BeginOffset": 1040,
+        "EndOffset": 1055,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 13,
+            "BeginOffset": 1040,
+            "EndOffset": 1046,
+            "Text": "Rectal",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Rectum structure (body structure)",
+                "Code": "34402009",
+                "Score": 0.6391388773918152
+              },
+              {
+                "Description": "Rectal (intended site)",
+                "Code": "738986003",
+                "Score": 0.22872397303581238
+              },
+              {
+                "Description": "Rectal (qualifier value)",
+                "Code": "255582007",
+                "Score": 0.1951712965965271
+              },
+              {
+                "Description": "Rectum wall structure (body structure)",
+                "Code": "511000202101",
+                "Score": 0.11308930069208145
+              },
+              {
+                "Description": "Rectal route (qualifier value)",
+                "Code": "37161004",
+                "Score": 0.09040557593107224
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.779019296169281
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Stenosis of rectum (disorder)",
+            "Code": "60658009",
+            "Score": 0.4732901453971863
+          },
+          {
+            "Description": "Stenosis of rectum and anus (disorder)",
+            "Code": "197216007",
+            "Score": 0.1444215625524521
+          },
+          {
+            "Description": "Stricture of rectum (disorder)",
+            "Code": "25730006",
+            "Score": 0.09362846612930298
+          },
+          {
+            "Description": "Stenosis of intestine (disorder)",
+            "Code": "23065003",
+            "Score": 0.060224030166864395
+          },
+          {
+            "Description": "Stenosis of colon (disorder)",
+            "Code": "19132000",
+            "Score": 0.0499042347073555
+          }
+        ]
+      },
+      {
+        "Id": 15,
+        "Text": "dilations",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1072,
+        "EndOffset": 1081,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Dilatation (morphologic abnormality)",
+            "Code": "25322007",
+            "Score": 0.04755701497197151
+          },
+          {
+            "Description": "Dilation of rectum (procedure)",
+            "Code": "59896001",
+            "Score": 0.04245435446500778
+          },
+          {
+            "Description": "Dilation - action (qualifier value)",
+            "Code": "129419002",
+            "Score": 0.018709050491452217
+          },
+          {
+            "Description": "Rectal mass (finding)",
+            "Code": "248523006",
+            "Score": 0.014459045603871346
+          },
+          {
+            "Description": "Dilatation of intestine (disorder)",
+            "Code": "86247009",
+            "Score": 0.014176896773278713
+          }
+        ]
+      },
+      {
+        "Id": 20,
+        "Text": "Two hemi-vaginas",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1085,
+        "EndOffset": 1101,
+        "Attributes": [
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5330596566200256,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 16,
+            "BeginOffset": 1089,
+            "EndOffset": 1101,
+            "Text": "hemi-vaginas",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Blood in vagina (finding)",
+                "Code": "248895001",
+                "Score": 0.050282154232263565
+              },
+              {
+                "Description": "Vaginal structure (body structure)",
+                "Code": "76784001",
+                "Score": 0.043958328664302826
+              },
+              {
+                "Description": "Entire vagina (body structure)",
+                "Code": "181441005",
+                "Score": 0.030966486781835556
+              },
+              {
+                "Description": "Structure of vaginal cervix (body structure)",
+                "Code": "279882009",
+                "Score": 0.03068431280553341
+              },
+              {
+                "Description": "Bleeding from vagina (finding)",
+                "Code": "289530006",
+                "Score": 0.028704101219773293
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 17,
+            "BeginOffset": 1107,
+            "EndOffset": 1119,
+            "Text": "two cervices",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Cervix uteri structure (body structure)",
+                "Code": "71252005",
+                "Score": 0.17218272387981415
+              },
+              {
+                "Description": "Vagina and cervix (combined site) (body structure)",
+                "Code": "110631004",
+                "Score": 0.08593284338712692
+              },
+              {
+                "Description": "Urethra and vagina (combined site) (body structure)",
+                "Code": "110847000",
+                "Score": 0.0722036361694336
+              },
+              {
+                "Description": "Vaginal part (body structure)",
+                "Code": "119224000",
+                "Score": 0.05624423921108246
+              },
+              {
+                "Description": "Uterus and cervix (combined site) (body structure)",
+                "Code": "110633001",
+                "Score": 0.05473071336746216
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.7172441482543945,
+            "RelationshipScore": 0.5068173408508301,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 18,
+            "BeginOffset": 1136,
+            "EndOffset": 1142,
+            "Text": "septum",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Vaginal septum (finding)",
+                "Code": "248877004",
+                "Score": 0.22799868881702423
+              },
+              {
+                "Description": "Structure of septum intermedium (body structure)",
+                "Code": "361468003",
+                "Score": 0.2173057347536087
+              },
+              {
+                "Description": "Structure of septum secundum (body structure)",
+                "Code": "82221002",
+                "Score": 0.19527316093444824
+              },
+              {
+                "Description": "Structure of sinus septum (body structure)",
+                "Code": "277695006",
+                "Score": 0.18134020268917084
+              },
+              {
+                "Description": "Structure of septum of testis (body structure)",
+                "Code": "32019000",
+                "Score": 0.17881804704666138
+              }
+            ]
+          },
+          {
+            "Category": "ANATOMY",
+            "Type": "SYSTEM_ORGAN_SITE",
+            "Score": 0.5971075296401978,
+            "RelationshipScore": 0.5692254304885864,
+            "RelationshipType": "SYSTEM_ORGAN_SITE",
+            "Id": 21,
+            "BeginOffset": 1148,
+            "EndOffset": 1167,
+            "Text": "two uterine\nsystems",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Vagina and uterus (combined site) (body structure)",
+                "Code": "110630003",
+                "Score": 0.10846271365880966
+              },
+              {
+                "Description": "Structure of uterine portion of fallopian tube (body structure)",
+                "Code": "83301008",
+                "Score": 0.1057518795132637
+              },
+              {
+                "Description": "Structure of uterine wall (body structure)",
+                "Code": "245485002",
+                "Score": 0.10434034466743469
+              },
+              {
+                "Description": "Uterine structure (body structure)",
+                "Code": "35039007",
+                "Score": 0.10275787860155106
+              },
+              {
+                "Description": "Structure of layer of uterine wall (body structure)",
+                "Code": "272666005",
+                "Score": 0.09540574252605438
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.47435709834098816
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Urethra and vagina (combined site) (body structure)",
+            "Code": "110847000",
+            "Score": 0.04351099207997322
+          },
+          {
+            "Description": "Septate vagina (disorder)",
+            "Code": "47054003",
+            "Score": 0.04215622320771217
+          },
+          {
+            "Description": "Entire vagina (body structure)",
+            "Code": "181441005",
+            "Score": 0.03867455944418907
+          },
+          {
+            "Description": "Vaginal septum (finding)",
+            "Code": "248877004",
+            "Score": 0.03585101291537285
+          },
+          {
+            "Description": "Blood in vagina (finding)",
+            "Code": "248895001",
+            "Score": 0.03511756286025047
+          }
+        ]
+      },
+      {
+        "Id": 16,
+        "Text": "hemi-vaginas",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1089,
+        "EndOffset": 1101,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Blood in vagina (finding)",
+            "Code": "248895001",
+            "Score": 0.050282154232263565
+          },
+          {
+            "Description": "Vaginal structure (body structure)",
+            "Code": "76784001",
+            "Score": 0.043958328664302826
+          },
+          {
+            "Description": "Entire vagina (body structure)",
+            "Code": "181441005",
+            "Score": 0.030966486781835556
+          },
+          {
+            "Description": "Structure of vaginal cervix (body structure)",
+            "Code": "279882009",
+            "Score": 0.03068431280553341
+          },
+          {
+            "Description": "Bleeding from vagina (finding)",
+            "Code": "289530006",
+            "Score": 0.028704101219773293
+          }
+        ]
+      },
+      {
+        "Id": 17,
+        "Text": "two cervices",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1107,
+        "EndOffset": 1119,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Cervix uteri structure (body structure)",
+            "Code": "71252005",
+            "Score": 0.17218272387981415
+          },
+          {
+            "Description": "Vagina and cervix (combined site) (body structure)",
+            "Code": "110631004",
+            "Score": 0.08593284338712692
+          },
+          {
+            "Description": "Urethra and vagina (combined site) (body structure)",
+            "Code": "110847000",
+            "Score": 0.0722036361694336
+          },
+          {
+            "Description": "Vaginal part (body structure)",
+            "Code": "119224000",
+            "Score": 0.05624423921108246
+          },
+          {
+            "Description": "Uterus and cervix (combined site) (body structure)",
+            "Code": "110633001",
+            "Score": 0.05473071336746216
+          }
+        ]
+      },
+      {
+        "Id": 18,
+        "Text": "septum",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.7172441482543945,
+        "BeginOffset": 1136,
+        "EndOffset": 1142,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Vaginal septum (finding)",
+            "Code": "248877004",
+            "Score": 0.22799868881702423
+          },
+          {
+            "Description": "Structure of septum intermedium (body structure)",
+            "Code": "361468003",
+            "Score": 0.2173057347536087
+          },
+          {
+            "Description": "Structure of septum secundum (body structure)",
+            "Code": "82221002",
+            "Score": 0.19527316093444824
+          },
+          {
+            "Description": "Structure of sinus septum (body structure)",
+            "Code": "277695006",
+            "Score": 0.18134020268917084
+          },
+          {
+            "Description": "Structure of septum of testis (body structure)",
+            "Code": "32019000",
+            "Score": 0.17881804704666138
+          }
+        ]
+      },
+      {
+        "Id": 19,
+        "Text": "two uterine",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1148,
+        "EndOffset": 1159,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Uterine structure (body structure)",
+            "Code": "35039007",
+            "Score": 0.1794884353876114
+          },
+          {
+            "Description": "Structure of uterine wall (body structure)",
+            "Code": "245485002",
+            "Score": 0.10037975013256073
+          },
+          {
+            "Description": "Structure of uterine portion of fallopian tube (body structure)",
+            "Code": "83301008",
+            "Score": 0.0974249467253685
+          },
+          {
+            "Description": "Vagina and uterus (combined site) (body structure)",
+            "Code": "110630003",
+            "Score": 0.08799239248037338
+          },
+          {
+            "Description": "Uterine membrane structure (body structure)",
+            "Code": "280704004",
+            "Score": 0.08335718512535095
+          }
+        ]
+      },
+      {
+        "Id": 21,
+        "Text": "two uterine\nsystems",
+        "Category": "ANATOMY",
+        "Type": "SYSTEM_ORGAN_SITE",
+        "Score": 0.5971075296401978,
+        "BeginOffset": 1148,
+        "EndOffset": 1167,
+        "Attributes": [],
+        "Traits": [],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Vagina and uterus (combined site) (body structure)",
+            "Code": "110630003",
+            "Score": 0.10846271365880966
+          },
+          {
+            "Description": "Structure of uterine portion of fallopian tube (body structure)",
+            "Code": "83301008",
+            "Score": 0.1057518795132637
+          },
+          {
+            "Description": "Structure of uterine wall (body structure)",
+            "Code": "245485002",
+            "Score": 0.10434034466743469
+          },
+          {
+            "Description": "Uterine structure (body structure)",
+            "Code": "35039007",
+            "Score": 0.10275787860155106
+          },
+          {
+            "Description": "Structure of layer of uterine wall (body structure)",
+            "Code": "272666005",
+            "Score": 0.09540574252605438
+          }
+        ]
+      },
+      {
+        "Id": 23,
+        "Text": "UTI's",
+        "Category": "MEDICAL_CONDITION",
+        "Type": "DX_NAME",
+        "Score": 0.821601390838623,
+        "BeginOffset": 1181,
+        "EndOffset": 1186,
+        "Attributes": [
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.6795811653137207,
+            "RelationshipType": "QUALITY",
+            "Id": 22,
+            "BeginOffset": 1171,
+            "EndOffset": 1180,
+            "Text": "Recurrent",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Recurrent (qualifier value)",
+                "Code": "255227004",
+                "Score": 0.42426198720932007
+              },
+              {
+                "Description": "Recurrence (qualifier value)",
+                "Code": "246455001",
+                "Score": 0.025771476328372955
+              },
+              {
+                "Description": "Repeat (qualifier value)",
+                "Code": "27582007",
+                "Score": 0.02537178248167038
+              },
+              {
+                "Description": "Recurrent urinary tract infection (disorder)",
+                "Code": "197927001",
+                "Score": 0.022100012749433517
+              },
+              {
+                "Description": "Recurrent cystitis (disorder)",
+                "Code": "197853008",
+                "Score": 0.018884725868701935
+              }
+            ]
+          },
+          {
+            "Category": "MEDICAL_CONDITION",
+            "Type": "QUALITY",
+            "Score": 0.6603351831436157,
+            "RelationshipScore": 0.6270833611488342,
+            "RelationshipType": "QUALITY",
+            "Id": 24,
+            "BeginOffset": 1189,
+            "EndOffset": 1202,
+            "Text": "much improved",
+            "Traits": [],
+            "SNOMEDCTConcepts": [
+              {
+                "Description": "Improved (qualifier value)",
+                "Code": "385425000",
+                "Score": 0.10196014493703842
+              },
+              {
+                "Description": "Much better (qualifier value)",
+                "Code": "445031000124107",
+                "Score": 0.05477197840809822
+              },
+              {
+                "Description": "Patient's condition improved (finding)",
+                "Code": "268910001",
+                "Score": 0.0315270870923996
+              },
+              {
+                "Description": "Better (qualifier value)",
+                "Code": "3442003",
+                "Score": 0.020932946354150772
+              },
+              {
+                "Description": "Improved sex life (finding)",
+                "Code": "162177003",
+                "Score": 0.015741417184472084
+              }
+            ]
+          }
+        ],
+        "Traits": [
+          {
+            "Name": "DIAGNOSIS",
+            "Score": 0.8203471899032593
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Urinary tract infectious disease (disorder)",
+            "Code": "68566005",
+            "Score": 0.0015912988455966115
+          },
+          {
+            "Description": "Recurrent urinary tract infection (disorder)",
+            "Code": "197927001",
+            "Score": 0.00022962928051128983
+          },
+          {
+            "Description": "Chronic urinary tract infection (disorder)",
+            "Code": "197928006",
+            "Score": 0.00020032035536132753
+          },
+          {
+            "Description": "Acute urinary tract infection (disorder)",
+            "Code": "431309003",
+            "Score": 9.782065899344161e-05
+          },
+          {
+            "Description": "Upper urinary tract infection (disorder)",
+            "Code": "422747000",
+            "Score": 7.85690572229214e-05
+          }
+        ]
+      },
+      {
+        "Id": 25,
+        "Text": "partial cloaca repair",
+        "Category": "TEST_TREATMENT_PROCEDURE",
+        "Type": "PROCEDURE_NAME",
+        "Score": 0.5330596566200256,
+        "BeginOffset": 1213,
+        "EndOffset": 1234,
+        "Attributes": [],
+        "Traits": [
+          {
+            "Name": "PAST_HISTORY",
+            "Score": 0.5296252369880676
+          }
+        ],
+        "SNOMEDCTConcepts": [
+          {
+            "Description": "Repair of persistant cloaca with lengthening of vagina (procedure)",
+            "Code": "439775005",
+            "Score": 0.18933424353599548
+          },
+          {
+            "Description": "Partial failure of replantation (disorder)",
+            "Code": "213165002",
+            "Score": 0.1783580631017685
+          },
+          {
+            "Description": "Repair of persistant cloaca by sacroperineal approach (procedure)",
+            "Code": "440682008",
+            "Score": 0.16126297414302826
+          },
+          {
+            "Description": "Repair of persistant cloaca by abdominal and sacroperineal approach (procedure)",
+            "Code": "440096003",
+            "Score": 0.13683757185935974
+          },
+          {
+            "Description": "Repair of recurrent lumbar hernia (procedure)",
+            "Code": "772082003",
+            "Score": 0.13045409321784973
+          }
+        ]
+      }
+    ],
+    "used_fallback": false,
+    "top3_fallback": [],
+    "used_summary_fallback": false,
+    "used_doctype_fallback": false
+  },
+  "summaries": {
+    "clinician": {
+      "summary": "Male patient cloacal Anomaly. Prenatal perforation of rectal pouch onto the perineum. Partial cloacal repair in 09/2020. Rectal stenosis - refractory to dilations. Two hemi-vaginas with two cervices. Recurrent UTI's much improved following repair. Likely to defer further reconstruction until near puberty. Mild rectal prolapse repaired 02/2026. Fluid in vagina on scans. Incomplete emptying on NIBA - restarting Solifenacin 3 mg OD. Aim for good oral fluid intake, regular voiding, double voiding and relaxed position with cough. Review in 6 months",
+      "confidence": 0.8
+    },
+    "patient": {
+      "summary": "female patient has an ongoing issue with not emptying her bladder fully. This is causing repeated urine infections. The doctors have advised restarting a medicine to help with this, and will do further tests if the infections continue. The patient needs to drink plenty of fluids, pass urine regularly, and be reviewed again in 6 months. The doctors will continue to monitor the patient's condition and recommend any further treatment if needed",
+      "confidence": 0.8
+    },
+    "pharmacist": {
+      "summary": "No medications mentioned. No new prescriptions. No drug monitoring required. No potential interactions to check. No over-the-counter advice given.",
+      "confidence": 0.8
+    },
+    "follow_up_actions": "1. Restart Solifenacin 3mg once daily - GP to prescribe\n2. Perform NIBA without Solifenacin to evaluate emptying - Specialist\n3. Aim for good oral fluid intake, regular voiding, double voiding and relaxed position with cough afterwards - Patient\n4. Schedule further appointment in 6 months - Specialist\n5. Continue monitoring for recurrent UTIs - Patient, GP",
+    "gp_actions": "1. Prescribe Solifenacin 3mg once daily for Emilie as per the recommendation.\n2. Monitor for any further UTIs while Emilie is on Solifenacin. If UTIs persist, refer back to Paediatric Urology for NIBA without Solifenacin to assess for incomplete bladder emptying.\n3. Encourage good oral fluid intake, regular voiding, double voiding, and a relaxed position with cough afterwards to help manage Emilie's bladder issues.\n4. Arrange a follow-up appointment with Emilie in 6 months as recommended by the Paediatric Urologist.",
+    "llm_confidence": 0.8
+  },
+  "gp_actions": "1. Prescribe Solifenacin 3mg once daily for Emilie as per the recommendation.\n2. Monitor for any further UTIs while Emilie is on Solifenacin. If UTIs persist, refer back to Paediatric Urology for NIBA without Solifenacin to assess for incomplete bladder emptying.\n3. Encourage good oral fluid intake, regular voiding, double voiding, and a relaxed position with cough afterwards to help manage Emilie's bladder issues.\n4. Arrange a follow-up appointment with Emilie in 6 months as recommended by the Paediatric Urologist.",
+  "follow_up_actions": "1. Restart Solifenacin 3mg once daily - GP to prescribe\n2. Perform NIBA without Solifenacin to evaluate emptying - Specialist\n3. Aim for good oral fluid intake, regular voiding, double voiding and relaxed position with cough afterwards - Patient\n4. Schedule further appointment in 6 months - Specialist\n5. Continue monitoring for recurrent UTIs - Patient, GP",
+  "phi_entity_count": 54
+}
